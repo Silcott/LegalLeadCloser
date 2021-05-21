@@ -45,6 +45,8 @@ namespace Database
                                 state_address NVARCHAR(2048)  NULL, 
                                 zipcode_address NVARCHAR(2048)  NULL, 
                                 creation_date TEXT  NULL, 
+                                subscription_service TEXT  NULL, 
+                                last_login TEXT  NULL, 
                                 image_name NVARCHAR(2048)  NULL, 
                                 security_level NVARCHAR(2048)  NULL);";
                 //Give the command query
@@ -67,6 +69,8 @@ namespace Database
                 string stateAddress = "NY";
                 string zipCodeAddress = "13421";
                 DateTime creationDate = DateTime.Now;
+                DateTime subscriptionServiceOneYear = DateTime.Now.AddDays(365);//add 1 year subsrciption
+                DateTime lastLoginDate = DateTime.Now;
                 string imageName = "no-image.png";
                 string securityLevel = "Admin";
                 string sqliteInsert_User_Admin = @"INSERT INTO tbl_users(
@@ -85,6 +89,8 @@ namespace Database
                                 state_address, 
                                 zipcode_address, 
                                 creation_date, 
+                                subscription_service, 
+                                last_login,
                                 image_name, 
                                 security_level
                                 ) VALUES (
@@ -102,15 +108,18 @@ namespace Database
                                 ,'" + cityAddress + @"'
                                 ,'" + stateAddress + @"'
                                 ,'" + zipCodeAddress + @"'
-                                ,'" + DateTime.Now + @"'
+                                ,'" + creationDate + @"'
+                                ,'" + subscriptionServiceOneYear + @"'
+                                ,'" + lastLoginDate + @"'
                                 ,'" + imageName + @"'
-                                ,'" + securityLevel + @"');";
+                                ,'" + securityLevel + "');";
                 sql_cmd.CommandText = sqliteInsert_User_Admin;
                 sql_cmd.ExecuteNonQuery();
 
                 //CREATE Table - Clients
                 string createTableQueryClients = @"CREATE TABLE IF NOT EXISTS tbl_clients (
                                 client_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, 
+                                user_id INTEGER NULL,
                                 first_name NVARCHAR(2048)  NULL, 
                                 last_name NVARCHAR(2048)  NULL, 
                                 full_name NVARCHAR(2048)  NULL, 
@@ -131,6 +140,7 @@ namespace Database
                                 state_address VARCHAR(2048)  NULL, 
                                 zipcode_address VARCHAR(2048)  NULL, 
                                 creation_date TEXT  NULL, 
+                                last_login TEXT  NULL, 
                                 image_name VARCHAR(2048)  NULL, 
                                 security_level VARCHAR(2048)  NULL);";
                 sql_cmd.CommandText = createTableQueryClients;
@@ -138,6 +148,7 @@ namespace Database
 
                 //LOAD Client - Default Client
                 int clientId = 1;
+                userId = 1;
                 firstName = "Default";
                 lastName = "Client";
                 fullname = firstName + " " + lastName;
@@ -158,10 +169,12 @@ namespace Database
                 stateAddress = "NY";
                 zipCodeAddress = "13421";
                 creationDate = DateTime.Now;
+                lastLoginDate = DateTime.Now;
                 imageName = "no-image.png";
                 securityLevel = "Client";
                 string sqliteInsert_Client_Default = @"INSERT INTO tbl_clients(
                                 client_id, 
+                                user_id,
                                 first_name, 
                                 last_name, 
                                 full_name, 
@@ -182,10 +195,12 @@ namespace Database
                                 state_address, 
                                 zipcode_address, 
                                 creation_date, 
+                                last_login,
                                 image_name, 
                                 security_level
                                 ) VALUES (
                                 '" + clientId + @"'
+                                ,'" + userId + @"'
                                 ,'" + firstName + @"'
                                 ,'" + lastName + @"'
                                 ,'" + fullname + @"'
@@ -205,7 +220,8 @@ namespace Database
                                 ,'" + cityAddress + @"'
                                 ,'" + stateAddress + @"'
                                 ,'" + zipCodeAddress + @"'
-                                ,'" + DateTime.Now + @"'
+                                ,'" + creationDate + @"'
+                                ,'" + lastLoginDate + @"'
                                 ,'" + imageName + @"'
                                 ,'" + securityLevel + "');";
                 sql_cmd.CommandText = sqliteInsert_Client_Default;
@@ -242,7 +258,10 @@ namespace Database
                                 q26 NVARCHAR(2048)  NULL, 
                                 q27 NVARCHAR(2048)  NULL, 
                                 q28 NVARCHAR(2048)  NULL, 
-                                q29 NVARCHAR(2048)  NULL);";
+                                q29 NVARCHAR(2048)  NULL,
+                                q30 NVARCHAR(2048)  NULL, 
+                                q31 NVARCHAR(2048)  NULL, 
+                                q32 NVARCHAR(2048)  NULL); ";
                 sql_cmd.CommandText = createTableQueryResponses;
                 sql_cmd.ExecuteNonQuery();
 
@@ -294,7 +313,6 @@ namespace Database
                 string q22 = "";
                 //Question 23: If yes have you recovered it yet? 
                 string q23 = "";
-
                 //Personal Pain Point Questions
                 //Question 24: What do you do for a living? 
                 string q24 = "";
@@ -308,6 +326,12 @@ namespace Database
                 string q28 = "";
                 //Question 29: What is your biggest concern or fear facing this charge? (Drop down box of the following: Prison/Jail, loss of license, loss of job, costs associated with legal fees and fines, criminal record, other)
                 string q29 = "";
+                //Question 30: Is that something you can put on a credit or debit card so that we may start to defend you right away? 
+                string q30 = "";
+                //Question 31: Do you like the idea of working with a law firm that only focuses on DWI / DUI defense ?
+                string q31 = "";
+                //Question 32: Sound fair enough?
+                string q32 = "";
 
                 string sqliteInsert_Client_Responses = @"INSERT INTO tbl_responses(
                                     client_id, 
@@ -339,7 +363,10 @@ namespace Database
                                     q26, 
                                     q27, 
                                     q28, 
-                                    q29
+                                    q29,
+                                    q30, 
+                                    q31, 
+                                    q32
                                     ) VALUES (
                                     '" + clientId + @"',
                                     '" + q1 + @"',
@@ -370,7 +397,10 @@ namespace Database
                                     '" + q26 + @"',
                                     '" + q27 + @"',
                                     '" + q28 + @"',
-                                    '" + q29 + @"');";
+                                    '" + q29 + @"',
+                                    '" + q30 + @"',
+                                    '" + q31 + @"',
+                                    '" + q32 + @"');";
                 sql_cmd.CommandText = sqliteInsert_Client_Responses;
                 sql_cmd.ExecuteNonQuery();
 
@@ -379,43 +409,33 @@ namespace Database
                 string createTableQueryPayment = @"CREATE TABLE IF NOT EXISTS tbl_payment (
                                     client_id INTEGER PRIMARY KEY, 
                                     case_cost NVARCHAR(2048)  NULL, 
-                                    q30 NVARCHAR(2048)  NULL, 
-                                    credit_card_number NVARCHAR(2048)  NULL, 
-                                    q31 NVARCHAR(2048)  NULL, 
-                                    q32 NVARCHAR(2048)  NULL);";
+                                    credit_card_number NVARCHAR(2048)  NULL);";
                 sql_cmd.CommandText = createTableQueryPayment;
                 sql_cmd.ExecuteNonQuery();
 
 
                 //LOAD Payment - Default
                 clientId = 1;
+
                 //Your investment for our firm to represent you in a case like this is $__________
                 string caseCost = "";
-                //Question 30: Is that something you can put on a credit or debit card so that we may start to defend you right away? 
-                string q30 = "";
+
                 //Credit card number
                 string creditCardNumber = "1234-4564-7894-1234"; //NOT STORED
                 string hashedCreditCardNumber = HashPassword.CalculateSHA256(creditCardNumber);
-                //Question 31: Do you like the idea of working with a law firm that only focuses on DWI / DUI defense ?
-                string q31 = "";
-                //Question 32: Sound fair enough?
-                string q32 = "";
+
                 string sqliteInsert_Client_Payment = @"INSERT INTO tbl_payment(
                                     client_id, 
                                     case_cost, 
-                                    q30, 
-                                    credit_card_number, 
-                                    q31, 
-                                    q32
+                                    credit_card_number
                                     ) VALUES (
                                     '" + clientId + @"',
                                     '" + caseCost + @"',
-                                    '" + q30 + @"',
-                                    '" + hashedCreditCardNumber + @"',
-                                    '" + q31 + @"',
-                                    '" + q32 + @"');";
+                                    '" + hashedCreditCardNumber + @"'); ";
                 sql_cmd.CommandText = sqliteInsert_Client_Payment;
                 sql_cmd.ExecuteNonQuery();
+
+
 
                 //Close connection to database
                 sqlite2.Close();
