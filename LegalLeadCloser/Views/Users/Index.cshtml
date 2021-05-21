@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<LegalLeadCloser.Models.Users>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "LLC";
 }
 
-<h1>Index</h1>
+<h1>User Dashboard</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -12,6 +12,9 @@
 <table class="table">
     <thead>
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserID)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.CompanyName)
             </th>
@@ -72,6 +75,9 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserID)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.CompanyName)
             </td>

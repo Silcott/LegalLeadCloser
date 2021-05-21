@@ -12,6 +12,7 @@ namespace LegalLeadCloser.Data
         public LegalLeadCloserContext (DbContextOptions<LegalLeadCloserContext> options)
             : base(options)
         {
+            Database.EnsureCreated();
         }
 
         public DbSet<LegalLeadCloser.Models.Clients> Clients { get; set; }
