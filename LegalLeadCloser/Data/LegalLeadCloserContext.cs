@@ -15,5 +15,7 @@ namespace LegalLeadCloser.Data
         }
 
         public DbSet<LegalLeadCloser.Models.Clients> Clients { get; set; }
+
+        public DbSet<LegalLeadCloser.Models.Users> Users { get; set; }
     }
 }
