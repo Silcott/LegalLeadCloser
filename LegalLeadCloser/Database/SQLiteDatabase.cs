@@ -418,7 +418,7 @@ namespace Database
                 clientId = 1;
 
                 //Your investment for our firm to represent you in a case like this is $__________
-                string caseCost = "";
+                string caseCost = "$2,000.00";
 
                 //Credit card number
                 string creditCardNumber = "1234-4564-7894-1234"; //NOT STORED

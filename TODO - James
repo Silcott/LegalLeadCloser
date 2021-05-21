@@ -44,5 +44,5 @@ Notes:
 2. Need to create classes
 3. Need to add last login date in database, log book of every action for admin to trace (such as failed and successful attempts, errors, encrypted POSTS, GETS
 4. Add admin table to database to capture logbook 
-5. Create a guest security level, for demo purpose.  Allow a timed service, from creation date.
-
+5. Create a guest security level, for demo purpose.  Allow a timed service, from creation date or change subscription services time.
+6. Create reset password code
