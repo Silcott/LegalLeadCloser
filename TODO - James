@@ -33,7 +33,9 @@ Questions:
 	If so, we can create a page just for the client, to see their profile data and update if needed.  Also,	submit a question to the user via email.
 2. Do we want a page to request a demo?
 3. Do we want a page to walkthrough the User to learn the program?
-4. 
+4. Where do we want to deploy the code? I have used Azure, but its expensive.  I would suggest deploy it remotely from home till we can test and determine any bugs.
+5. Do we have any testers lined up? We need people that aren't familiar witht he code and people that can try and break it.  This takes time and effort to log every bug, something to think about.
+6. 
 
 
 
