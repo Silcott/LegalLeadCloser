@@ -1,19 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using LegalLeadCloser.Data;
 using LegalLeadCloser.Models;
+using Scrypt;
 
 namespace LegalLeadCloser.Controllers
 {
     public class UsersController : Controller
     {
+        //Construct a name to call on the database
         private readonly LegalLeadCloserContext _context;
-
         public UsersController(LegalLeadCloserContext context)
         {
             _context = context;
@@ -39,26 +38,73 @@ namespace LegalLeadCloser.Controllers
             {
                 return NotFound();
             }
-
             return View(users);
         }
 
         // GET: Users/Create
         public IActionResult Create()
         {
-            return View();
+            var users = new Users();
+            users = new Users
+            {
+                CreationDate = DateTime.Now,
+                Roles = "USER",
+        };
+            return View(users);
         }
+    
 
         // POST: Users/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UserID,CompanyName,YearsPracticing,MonthsPracticing,FirstName,LastName,FullName,StreetAddress,CityAddress,StateAddress,ZipCodeAddress,Phone,Email,ImageName,CreationDate,SubscriptionSerivice,SecurityLevel,Password,LastLogin")] Users users)
+        public async Task<IActionResult> Create(
+            [Bind(@"
+                        UserID,
+                        CompanyName,
+                        CompanyStartDate,
+                        FirstName,
+                        LastName,
+                        StreetAddress,
+                        CityAddress,
+                        StateAddress,
+                        ZipCodeAddress,
+                        Phone,
+                        Email,
+                        CreationDate,
+                        SubscriptionSerivice,
+                        Roles,
+                        Username,
+                        Password")] Users users)
         {
+            //Initiate the encryption encoder for the password
+            ScryptEncoder encoder = new ScryptEncoder();
+            //Check if username is already registered
+            var registeredUser = (from c in _context.Users
+                                  where c.Username.Equals(users.Username)
+                                  select c).SingleOrDefault();
+            //If the username is found in database send message
+            if (registeredUser != null)
+            {
+                ModelState.AddModelError("", "That username already exists!");
+                return View();
+            }
+            //Check if all the User properties are vaild
             if (ModelState.IsValid)
             {
+                //Add property values from Register form - need to add first before encryption to have the user in the database first
                 _context.Add(users);
+                //Hash password from the User
+                string hash = encoder.Encode(users.Password);
+                //Assign th ehashed password to the password property
+                users.Password = hash;
+                //Re-add the property values to capture the new hashed password 
+                //TODO : verify the password is protected accross the url/post
+                _context.Add(users);
+                //Save database
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -86,7 +132,23 @@ namespace LegalLeadCloser.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("UserID,CompanyName,YearsPracticing,MonthsPracticing,FirstName,LastName,FullName,StreetAddress,CityAddress,StateAddress,ZipCodeAddress,Phone,Email,ImageName,CreationDate,SubscriptionSerivice,SecurityLevel,Password,LastLogin")] Users users)
+        public async Task<IActionResult> Edit(int id, [Bind(@"
+                        UserID,
+                        CompanyName,
+                        CompanyStartDate,
+                        FirstName,
+                        LastName,
+                        StreetAddress,
+                        CityAddress,
+                        StateAddress,
+                        ZipCodeAddress,
+                        Phone,
+                        Email,
+                        CreationDate,
+                        SubscriptionSerivice,
+                        Roles,
+                        Username,
+                        Password")] Users users)
         {
             if (id != users.UserID)
             {

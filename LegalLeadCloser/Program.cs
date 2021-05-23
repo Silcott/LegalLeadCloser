@@ -1,5 +1,9 @@
 using Database;
+using LegalLeadCloser.Data;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.DataEncryption;
+using Microsoft.EntityFrameworkCore.DataEncryption.Providers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -14,7 +18,6 @@ namespace LegalLeadCloser
     {
         public static void Main(string[] args)
         {
-            SQLiteDatabase.CreateDatabase();
             CreateHostBuilder(args).Build().Run();
         }
 

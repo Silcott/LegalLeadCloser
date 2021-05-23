@@ -54,7 +54,7 @@ namespace LegalLeadCloser.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ClientID,UserID,CourtName,CourtCounty,CourtDay,CourtMonth,CourtYear,CourtTime,StreetAddress,CityAddress,StateAddress,ZipCodeAddress,Phone,Email,ImageName,CreationDate,BirthDay,BirthMonth,BirthYear,SecurityLevel,Password,LastLogin")] Clients clients)
+        public async Task<IActionResult> Create([Bind("ClientID,UserID,CourtName,CourtCounty,CourtDay,CourtMonth,CourtYear,CourtTime,StreetAddress,CityAddress,StateAddress,ZipCodeAddress,Phone,Email,ImageName,CreationDate,BirthDay,BirthMonth,BirthYear,Roles,Password,LastLogin")] Clients clients)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace LegalLeadCloser.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ClientID,UserID,CourtName,CourtCounty,CourtDay,CourtMonth,CourtYear,CourtTime,StreetAddress,CityAddress,StateAddress,ZipCodeAddress,Phone,Email,ImageName,CreationDate,BirthDay,BirthMonth,BirthYear,SecurityLevel,Password,LastLogin")] Clients clients)
+        public async Task<IActionResult> Edit(int id, [Bind("ClientID,UserID,CourtName,CourtCounty,CourtDay,CourtMonth,CourtYear,CourtTime,StreetAddress,CityAddress,StateAddress,ZipCodeAddress,Phone,Email,ImageName,CreationDate,BirthDay,BirthMonth,BirthYear,Roles,Password,LastLogin")] Clients clients)
         {
             if (id != clients.ClientID)
             {
