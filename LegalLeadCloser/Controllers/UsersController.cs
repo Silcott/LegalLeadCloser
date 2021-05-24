@@ -11,8 +11,8 @@ namespace LegalLeadCloser.Controllers
 {
     public class UsersController : Controller
     {
-        //Construct a name to call on the database
         private readonly LegalLeadCloserContext _context;
+
         public UsersController(LegalLeadCloserContext context)
         {
             _context = context;
@@ -38,18 +38,19 @@ namespace LegalLeadCloser.Controllers
             {
                 return NotFound();
             }
+
             return View(users);
         }
 
         // GET: Users/Create
         public IActionResult Create()
         {
-            var users = new Users();
-            users = new Users
+            var users = new Users
             {
                 CreationDate = DateTime.Now,
                 Roles = "USER",
-        };
+                ImageName = "no-image.png"
+            };
             return View(users);
         }
     
@@ -75,10 +76,11 @@ namespace LegalLeadCloser.Controllers
                         Phone,
                         Email,
                         CreationDate,
-                        SubscriptionSerivice,
+                        SubscriptionService,
                         Roles,
                         Username,
-                        Password")] Users users)
+                        Password,
+                        ConfirmPassword")] Users users)
         {
             //Initiate the encryption encoder for the password
             ScryptEncoder encoder = new ScryptEncoder();
@@ -92,15 +94,21 @@ namespace LegalLeadCloser.Controllers
                 ModelState.AddModelError("", "That username already exists!");
                 return View();
             }
-            //Check if all the User properties are vaild
+            ////Check if all the User properties are vaild
             if (ModelState.IsValid)
             {
+        //        var workItems = _context.Users
+        //.Include(x => x.UserID)
+        //.ThenInclude(contract => contract);
                 //Add property values from Register form - need to add first before encryption to have the user in the database first
                 _context.Add(users);
                 //Hash password from the User
                 string hash = encoder.Encode(users.Password);
+                string hashConfirm = encoder.Encode(users.ConfirmPassword);
+
                 //Assign th ehashed password to the password property
                 users.Password = hash;
+                users.ConfirmPassword = hashConfirm;
                 //Re-add the property values to capture the new hashed password 
                 //TODO : verify the password is protected accross the url/post
                 _context.Add(users);
@@ -145,10 +153,11 @@ namespace LegalLeadCloser.Controllers
                         Phone,
                         Email,
                         CreationDate,
-                        SubscriptionSerivice,
+                        SubscriptionService,
                         Roles,
                         Username,
-                        Password")] Users users)
+                        Password,
+                        ConfirmPassword")] Users users)
         {
             if (id != users.UserID)
             {

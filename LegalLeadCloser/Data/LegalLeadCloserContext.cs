@@ -12,6 +12,7 @@ namespace LegalLeadCloser.Data
         public LegalLeadCloserContext()
             : base()
         {
+
         }
         public DbSet<LegalLeadCloser.Models.Clients> Clients { get; set; }
 

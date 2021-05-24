@@ -52,7 +52,7 @@
                 @Html.DisplayNameFor(model => model.CreationDate)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SubscriptionSerivice)
+                @Html.DisplayNameFor(model => model.SubscriptionService)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Roles)
@@ -64,9 +64,8 @@
                 @Html.DisplayNameFor(model => model.Password)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.LastLogin)
+                @Html.DisplayNameFor(model => model.ConfirmPassword)
             </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -112,7 +111,7 @@
                 @Html.DisplayFor(modelItem => item.CreationDate)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.SubscriptionSerivice)
+                @Html.DisplayFor(modelItem => item.SubscriptionService)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Roles)
@@ -124,7 +123,7 @@
                 @Html.DisplayFor(modelItem => item.Password)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.LastLogin)
+                @Html.DisplayFor(modelItem => item.ConfirmPassword)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.UserID">Edit</a> |

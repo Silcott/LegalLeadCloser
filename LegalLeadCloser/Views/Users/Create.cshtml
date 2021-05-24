@@ -116,15 +116,23 @@
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SubscriptionSerivice" class="control-label"></label>
-                <select input asp-for="SubscriptionSerivice" class="form-control selectpicker">
+                <input asp-for="ImageName" class="form-control" />
+                <span asp-validation-for="ImageName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="CreationDate" class="form-control" />
+                <span asp-validation-for="CreationDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SubscriptionService" class="control-label"></label>
+                <select input asp-for="SubscriptionService" class="form-control selectpicker">
                     <option value="" selected disabled hidden>Please select your Subscription</option>
                     <option value="10 days Trial">10 days Trial</option>
                     <option value="30 days">30 days</option>
                     <option value="180 days">180 days</option>
                     <option value="365 days">365 days</option>
                 </select>
-                <span asp-validation-for="SubscriptionSerivice" class="text-danger"></span>
+                <span asp-validation-for="SubscriptionService" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input asp-for="Roles" class="form-control" />

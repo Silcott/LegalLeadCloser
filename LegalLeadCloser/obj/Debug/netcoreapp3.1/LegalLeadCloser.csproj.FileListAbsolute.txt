@@ -190,6 +190,5 @@ C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\obj\Debug\netcoreapp3.1
 C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\obj\Debug\netcoreapp3.1\LegalLeadCloser.pdb
 C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\obj\Debug\netcoreapp3.1\LegalLeadCloser.genruntimeconfig.cache
 C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\bin\Debug\netcoreapp3.1\EntityFrameworkCore.DataEncryption.dll
-C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\bin\Debug\netcoreapp3.1\System.Web.Helpers.Crypto.dll
 C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\obj\Debug\netcoreapp3.1\LegalLeadCloser.csprojAssemblyReference.cache
 C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\bin\Debug\netcoreapp3.1\Scrypt.dll

@@ -89,9 +89,9 @@ namespace LegalLeadCloser.Models
         }
 
         //Subscription Service
-        [Required(ErrorMessage = "Subscription Service is Required")]
+        [Required(ErrorMessage = "Subscription is Required")]
         [DisplayName("Subscription Service")]
-        public string SubscriptionSerivice { get; set; }
+        public string SubscriptionService { get; set; }
 
         //Security Level
         //TODO may need to put 'requiredif attribute' statement to say required if IsAdmin = true 
@@ -106,7 +106,7 @@ namespace LegalLeadCloser.Models
 
         //Username
         [StringLength(50, MinimumLength = 3)]
-        [DisplayName("Username *Must be Unique")]
+        [DisplayName("Username - Must be Unique")]
         [Required(ErrorMessage = "Username is Required")]
         public string Username { get; set; }
         
@@ -121,8 +121,9 @@ namespace LegalLeadCloser.Models
         public string Password { get; set; }
 
         //Confirm Password
+        [NotMapped]
         [Required(ErrorMessage = "Confirm Password is required")]
-        [ReadOnly(true)]
+        //[ReadOnly(true)]
         [StringLength(24, ErrorMessage = "Must be between 8 and 24 characters", MinimumLength = 8)]
         [DataType(DataType.Password)]
         [Compare("Password")]
