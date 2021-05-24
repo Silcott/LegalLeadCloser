@@ -86,12 +86,12 @@ namespace LegalLeadCloser.Controllers
             ScryptEncoder encoder = new ScryptEncoder();
             //Check if username is already registered
             var registeredUser = (from c in _context.Users
-                                  where c.Username.Equals(users.Username)
+                                  where c.Email.Equals(users.Email)
                                   select c).SingleOrDefault();
             //If the username is found in database send message
             if (registeredUser != null)
             {
-                ModelState.AddModelError("", "That username already exists!");
+                ModelState.AddModelError("", "That email address already exists!");
                 return View();
             }
             ////Check if all the User properties are vaild

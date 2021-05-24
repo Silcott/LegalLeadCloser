@@ -12,9 +12,12 @@ namespace LegalLeadCloser.Models
         private DateTime? creationDate;
 
         private string roles = "USER";
+        private string imageName = "no-image.png";
+
 
         //UserID
         [Key]
+        [ScaffoldColumn(false)]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [DisplayName("ID")]
         public int UserID { get; set; }
@@ -79,9 +82,17 @@ namespace LegalLeadCloser.Models
         public string Email { get; set; }
 
         //Image Name
-        public string ImageName { get; set; }
+        [ScaffoldColumn(false)]
+        [DisplayName("Image File Path")]
+        public string ImageName
+        {
+            get { return imageName; }
+            set { imageName = value; }
+        }
 
         //Date Created - Timestamp of when User is Created
+        [ScaffoldColumn(false)]
+        [DisplayName("Date Created")]
         public DateTime CreationDate
         {
             get { return creationDate ?? DateTime.Now; }
@@ -96,7 +107,7 @@ namespace LegalLeadCloser.Models
         //Security Level
         //TODO may need to put 'requiredif attribute' statement to say required if IsAdmin = true 
         [ScaffoldColumn(false)]
-        [HiddenInput(DisplayValue = false)]
+        //[HiddenInput(DisplayValue = false)]
         [ReadOnly(true)]
         public string Roles
         {
@@ -106,7 +117,7 @@ namespace LegalLeadCloser.Models
 
         //Username
         [StringLength(50, MinimumLength = 3)]
-        [DisplayName("Username - Must be Unique")]
+        [DisplayName("Username")]
         [Required(ErrorMessage = "Username is Required")]
         public string Username { get; set; }
         
@@ -130,6 +141,8 @@ namespace LegalLeadCloser.Models
         public string ConfirmPassword { get; set; }
 
         //Last Login Date
+        [DisplayName("Last Login Date")]
+        [ScaffoldColumn(false)]
         public string LastLogin { get; set; }
 
     }
