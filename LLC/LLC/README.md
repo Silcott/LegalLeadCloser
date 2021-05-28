@@ -60,4 +60,4 @@ Here are a few ways by which you can support.
 -   Recommend this awesome project to your colleagues. 🥇
 -   Or, If you want to support this project on the long run, [consider buying me a coffee](https://www.buymeacoffee.com/jbsilcott)! ☕
 
-<a href="https://www.buymeacoffee.com/jbsilcott" target="_blank"><img src="https://codewithmukesh.com/wp-content/uploads/2021/04/bmclogo.jpg" alt="Buy Me A Coffee" width="200"  style="height: 60px !important;width: 200px !important;" ></a>
+<a href="https://www.buymeacoffee.com/jbsilcott" target="_blank"><img src="https://github.com/Silcott/LegalLeadCloser/blob/main/LLC%20images/bmclogo.jpg?raw=true" alt="Buy Me A Coffee" width="200"  style="height: 60px !important;width: 200px !important;" ></a>
