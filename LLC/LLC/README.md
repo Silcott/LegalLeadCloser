@@ -6,7 +6,7 @@
 <p align="center">
 <a href="https://github.com/Silcott/LegalLeadCloser">
 <img src="https://github.com/Silcott/LegalLeadCloser/blob/main/LLC%20images/LLC_Logo_colored.png?raw=true" alt="Legal Lead Closer">
-<img align="right" height="270px" width="450px" src="https://raw.githubusercontent.com/Silcott/LegalLeadCloser/LLC%20images/Mobile.gif.gif" alt="html" style="vertical-align:top; margin:4px"> 
+<img align="right" height="270px" width="450px" src="https://raw.githubusercontent.com/Silcott/LegalLeadCloser/LLC%20images/Mobile.gif" alt="html" style="vertical-align:top; margin:4px"> 
 </p>
 </a>
 <br>
