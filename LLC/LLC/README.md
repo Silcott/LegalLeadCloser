@@ -24,9 +24,9 @@
 <br />
 <p align="center">
   <a href="https://github.com/Silcott/LegalLeadCloser">
-    <img src="https://github.com/Silcott/LegalLeadCloser/LLC images/LLC_Logo_colored.png" alt="Blazor Hero">
+    <img src="https://github.com/Silcott/LegalLeadCloser/blob/main/LLC%20images/LLC_Logo_colored.png?raw=true" alt="Legal Lead Closer">
   </a>
-  <h3 align="center">BlazorHero - Clean Architecture Template</h3>
+  <h3 align="center">Legal Lead Closer</h3>
   <p align="center">
     Open Sourced Solution Template For Blazor Web-Assembly 5.0 built with MudBlazor Components
     <br />
