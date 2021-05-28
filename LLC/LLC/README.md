@@ -3,16 +3,17 @@
 <p align="center">
   
   <h1 align="center">Legal Lead Closer</h1>
-<a href="https://github.com/Silcott/LegalLeadCloser">
+<a href="https://github.com/Silcott/LegalLeadCloser" align="center">
     <img src="https://github.com/Silcott/LegalLeadCloser/blob/main/LLC%20images/LLC_Logo_colored.png?raw=true" alt="Legal Lead Closer">
   </a>
   <p align="center">
-    The Ultimate Closing Guide To Grow Your Law Practice!
+    <h3 align="center">The Ultimate Closing Guide To Grow Your Law Practice!</h3>
+<hr>
     <br />
  Better Practice equals Better Life! Grow your Sales and Business side of Law with the All-In-One Easy Guide For Attorneys to Quickly Close Clients and Develop Their Business Communication Skills.
-Founded by <br>
+<br>Founded by <br>
 <a href="https://ascent.legal">
-Ascent Legal
+<h3>Ascent Legal</h3>
 </a>
 </p>
 </p>
