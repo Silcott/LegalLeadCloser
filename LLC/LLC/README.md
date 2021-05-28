@@ -14,13 +14,12 @@
 <br>
 <p align="center">
 <h3 align="center">
-- Better Practice...Better Life! -
+Better Practice...Better Life!
 <br>
 Grow your Sales and Business side of Law with the All-In-One Easy Guide For Attorneys to Quickly Close Clients and Develop Their Business Communication Skills.
 <br>
 Founded by 
 </h3>
-<br>
 <h2 align="center">
 <a href="https://ascent.legal">
 Ascent Legal</h2>
