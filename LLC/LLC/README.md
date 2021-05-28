@@ -13,13 +13,13 @@
 <h1 align="center">The Ultimate Closing Guide To Grow Your Law Practice!</h1>
 <hr>
 <br>
-<p align="center">
-Better Practice equals Better Life! Grow your Sales and Business side of Law with the All-In-One Easy Guide For Attorneys to Quickly Close Clients and Develop Their Business Communication Skills.
+<p align="center"><h2 align="center">
+Better Practice equals Better Life! <br>Grow your Sales and Business side of Law with the All-In-One Easy Guide For Attorneys to Quickly Close Clients and Develop Their Business Communication Skills.
 <br>
 Founded by 
 <br>
 <a href="https://ascent.legal">
-<h3 align="center">Ascent Legal</h3>
+Ascent Legal</h2>
 </a>
 </p>
 
