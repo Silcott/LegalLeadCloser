@@ -1,7 +1,7 @@
 ﻿<!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h1 align="center">Legal Lead Closer</h1>
+<h1 align="center">Legal Lead Closer</h1>
 <br>
 <p align="center">
 <a href="https://github.com/Silcott/LegalLeadCloser">
@@ -11,21 +11,27 @@
 <br>
 </p>
 <h1 align="center">The Ultimate Closing Guide To Grow Your Law Practice!</h1>
-<hr>
 <br>
-<p align="center"><h2 align="center">
-Better Practice equals Better Life! <br>Grow your Sales and Business side of Law with the All-In-One Easy Guide For Attorneys to Quickly Close Clients and Develop Their Business Communication Skills.
+<p align="center">
+<h2 align="center">
+Better Practice equals Better Life! 
+</h2>
+<br>
+<h3 align="center">
+Grow your Sales and Business side of Law with the All-In-One Easy Guide For Attorneys to Quickly Close Clients and Develop Their Business Communication Skills.
 <br>
 Founded by 
+</h3>
 <br>
+<h2 align="center">
 <a href="https://ascent.legal">
 Ascent Legal</h2>
 </a>
+</h2>
 </p>
 
 ## Give a Star! :star:
 If you like this project and find it helpful to start your own or feel like giving, please star it! Thanks!
-
 
 
 ## About The Project :zap:
@@ -39,14 +45,6 @@ and keeps all the information secure and mobile.
 
 Designed using Blazor Webassembly 5.0 built with MudBlazor Components.
 
-## Complete Overview - Youtube Video 🆕 📈
-<!--
-So, here is an in-depth video that takes you through the BlazorHero Project! Do Like & Subscribe to my Youtube channel! It would be great if you could leave behind your valuable feedback in the comments section of the Video. This helps me reach a much wider audience with time :)
-
-<a href="https://www.youtube.com/watch?v=j7BxKN7HYjk&lc=Ugy1SjDcmP0pboRxJe94AaABAg">Watch it here!</a>
-
-[![Blazor Hero - Clean Architecture Solution Template for Blazor WebAssembly](http://img.youtube.com/vi/j7BxKN7HYjk/0.jpg)](http://www.youtube.com/watch?v=j7BxKN7HYjk "Blazor Hero - Clean Architecture Solution Template for Blazor WebAssembly")
--->
 
 ### Tech Stack :muscle:
 
