@@ -1,0 +1,75 @@
+2021-05-28 06:18:21.725 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-28 06:18:21.764 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-28 06:18:21.767 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-28 06:18:21.767 -04:00 [INF] Hosting environment: Development
+2021-05-28 06:18:21.767 -04:00 [INF] Content root path: C:\Users\silco\Documents\LLC\LLC\LLC\Server
+2021-05-28 06:18:59.798 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-28 06:18:59.833 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-28 06:18:59.835 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-28 06:18:59.837 -04:00 [INF] Hosting environment: Development
+2021-05-28 06:18:59.837 -04:00 [INF] Content root path: C:\Users\silco\Documents\LLC\LLC\LLC\Server
+2021-05-28 06:19:44.749 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-28 06:19:44.783 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-28 06:19:44.786 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-28 06:19:44.786 -04:00 [INF] Hosting environment: Development
+2021-05-28 06:19:44.787 -04:00 [INF] Content root path: C:\Users\silco\Documents\LLC\LLC\LLC\Server
+2021-05-28 06:20:29.983 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-28 06:20:30.017 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-28 06:20:30.019 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-28 06:20:30.020 -04:00 [INF] Hosting environment: Development
+2021-05-28 06:20:30.020 -04:00 [INF] Content root path: C:\Users\silco\Documents\LLC\LLC\LLC\Server
+2021-05-28 06:21:37.586 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-28 06:21:37.621 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-28 06:21:37.623 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-28 06:21:37.623 -04:00 [INF] Hosting environment: Development
+2021-05-28 06:21:37.624 -04:00 [INF] Content root path: C:\Users\silco\Documents\LLC\LLC\LLC\Server
+2021-05-28 06:46:53.992 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-28 06:46:54.036 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-28 06:46:54.038 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-28 06:46:54.038 -04:00 [INF] Hosting environment: Development
+2021-05-28 06:46:54.039 -04:00 [INF] Content root path: C:\Users\silco\Documents\LLC\LLC\LLC\Server
+2021-05-28 09:40:07.063 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-28 09:40:07.110 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-28 09:40:07.113 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-28 09:40:07.113 -04:00 [INF] Hosting environment: Development
+2021-05-28 09:40:07.114 -04:00 [INF] Content root path: C:\Users\silco\Documents\LLC\LLC\LLC\Server
+2021-05-28 09:42:03.741 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-28 09:42:03.786 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-28 09:42:03.789 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-28 09:42:03.790 -04:00 [INF] Hosting environment: Development
+2021-05-28 09:42:03.791 -04:00 [INF] Content root path: C:\Users\silco\Documents\LLC\LLC\LLC\Server
+2021-05-28 09:43:44.904 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-28 09:43:44.940 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-28 09:43:44.942 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-28 09:43:44.943 -04:00 [INF] Hosting environment: Development
+2021-05-28 09:43:44.944 -04:00 [INF] Content root path: C:\Users\silco\Documents\LLC\LLC\LLC\Server
+2021-05-28 09:44:20.587 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-28 09:44:20.629 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-28 09:44:20.631 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-28 09:44:20.631 -04:00 [INF] Hosting environment: Development
+2021-05-28 09:44:20.632 -04:00 [INF] Content root path: C:\Users\silco\Documents\LLC\LLC\LLC\Server
+2021-05-28 09:48:30.304 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-28 09:48:30.340 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-28 09:48:30.343 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-28 09:48:30.344 -04:00 [INF] Hosting environment: Development
+2021-05-28 09:48:30.344 -04:00 [INF] Content root path: C:\Users\silco\Documents\LLC\LLC\LLC\Server
+2021-05-28 09:51:08.748 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-28 09:51:08.784 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-28 09:51:08.786 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-28 09:51:08.787 -04:00 [INF] Hosting environment: Development
+2021-05-28 09:51:08.787 -04:00 [INF] Content root path: C:\Users\silco\Documents\LLC\LLC\LLC\Server
+2021-05-28 09:55:16.452 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-28 09:55:16.487 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-28 09:55:16.489 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-28 09:55:16.490 -04:00 [INF] Hosting environment: Development
+2021-05-28 09:55:16.490 -04:00 [INF] Content root path: C:\Users\silco\Documents\LLC\LLC\LLC\Server
+2021-05-28 10:12:11.608 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-28 10:12:11.645 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-28 10:12:11.648 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-28 10:12:11.648 -04:00 [INF] Hosting environment: Development
+2021-05-28 10:12:11.649 -04:00 [INF] Content root path: C:\Users\silco\Documents\LLC\LLC\LLC\Server
+2021-05-28 10:32:35.879 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-28 10:32:35.924 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-28 10:32:35.926 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-28 10:32:35.927 -04:00 [INF] Hosting environment: Development
+2021-05-28 10:32:35.927 -04:00 [INF] Content root path: C:\Users\silco\Documents\LLC\LLC\LLC\Server

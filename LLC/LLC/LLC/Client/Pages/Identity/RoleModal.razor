@@ -1,0 +1,40 @@
+<EditForm Model="@RoleModel" OnValidSubmit="SaveAsync">
+    <FluentValidationValidator @ref="_fluentValidationValidator" />
+    <MudDialog>
+        <TitleContent>
+            @{
+                if (RoleModel.Id == null)
+                {
+                    <MudText Typo="Typo.h6">
+                        <MudIcon Icon="@Icons.Material.Filled.Add" Class="mr-3 mb-n1" />
+                        @localizer["Add Role"]
+                    </MudText>
+                }
+                else
+                {
+                    <MudText Typo="Typo.h6">
+                        <MudIcon Icon="@Icons.Material.Filled.Update" Class="mr-3 mb-n1" />
+                        @localizer["Update Role"]
+                    </MudText>
+                }
+            }
+        </TitleContent>
+        <DialogContent>
+            <MudTextField For="@(() => RoleModel.Id)" @bind-Value="RoleModel.Id" Label="@localizer["Role ID"]" Disabled />
+            <MudTextField For="@(() => RoleModel.Name)" @bind-Value="RoleModel.Name" Label="@localizer["Role Name"]" />
+        </DialogContent>
+        <DialogActions>
+            <MudButton Variant="Variant.Filled" OnClick="Cancel">@localizer["Cancel"]</MudButton>
+            @{
+                if (RoleModel.Id == null)
+                {
+                    <MudButton Variant="Variant.Filled" ButtonType="ButtonType.Submit" Disabled="@(!validated)" Color="Color.Success">@localizer["Save Role"]</MudButton>
+                }
+                else
+                {
+                    <MudButton Variant="Variant.Filled" ButtonType="ButtonType.Submit" Disabled="@(!validated)" Color="Color.Secondary">@localizer["Update Role"]</MudButton>
+                }
+            }
+        </DialogActions>
+    </MudDialog>
+</EditForm>

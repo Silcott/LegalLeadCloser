@@ -26,6 +26,7 @@ namespace LegalLeadCloser
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddRazorPages();
 
             services.AddDbContext<LegalLeadCloserContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("LegalLeadCloserContext")));
@@ -49,6 +50,7 @@ namespace LegalLeadCloser
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -56,6 +58,7 @@ namespace LegalLeadCloser
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
             });
         }
     }

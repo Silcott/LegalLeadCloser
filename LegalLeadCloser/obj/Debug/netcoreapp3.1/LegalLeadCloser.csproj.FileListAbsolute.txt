@@ -175,7 +175,6 @@ C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\obj\Debug\netcoreapp3.1
 C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\obj\Debug\netcoreapp3.1\Razor\Views\Users\Create.cshtml.g.cs
 C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\obj\Debug\netcoreapp3.1\Razor\Views\Users\Delete.cshtml.g.cs
 C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\obj\Debug\netcoreapp3.1\Razor\Views\Users\Details.cshtml.g.cs
 C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\obj\Debug\netcoreapp3.1\Razor\Views\Users\Edit.cshtml.g.cs
@@ -192,3 +191,11 @@ C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\obj\Debug\netcoreapp3.1
 C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\bin\Debug\netcoreapp3.1\EntityFrameworkCore.DataEncryption.dll
 C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\obj\Debug\netcoreapp3.1\LegalLeadCloser.csprojAssemblyReference.cache
 C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\bin\Debug\netcoreapp3.1\Scrypt.dll
+C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\obj\Debug\netcoreapp3.1\Razor\Views\Users\Create.cshtml.g.cs
+C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\bin\Debug\netcoreapp3.1\System.Web.Mvc.dll
+C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\bin\Debug\netcoreapp3.1\System.Web.Razor.dll
+C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\bin\Debug\netcoreapp3.1\System.Web.Helpers.dll
+C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\bin\Debug\netcoreapp3.1\System.Web.WebPages.Deployment.dll
+C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\bin\Debug\netcoreapp3.1\System.Web.WebPages.Razor.dll
+C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\bin\Debug\netcoreapp3.1\System.Web.WebPages.dll
+C:\Users\silco\Documents\LegalLeadCloser\LegalLeadCloser\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll

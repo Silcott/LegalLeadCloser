@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -34,47 +35,55 @@ namespace LegalLeadCloser.Models
         public DateTime? CompanyStartDate { get; set; }
 
         //First Name
+        [PersonalData]
         [StringLength(50, MinimumLength = 3)]
         [DisplayName("First Name")]
         [Required(ErrorMessage = "First Name is Required")]
         public string FirstName { get; set; }
 
         //Last Name
+        [PersonalData]
         [DisplayName("Last Name")]
         [StringLength(50, MinimumLength = 3)]
         [Required(ErrorMessage = "Last Name is Required")]
         public string LastName { get; set; }
 
         //Street
+        [PersonalData]
         [DisplayName("Street")]
         [StringLength(50, MinimumLength = 3)]
         [Required(ErrorMessage = "Street Address is Required")]
         public string StreetAddress { get; set; }
 
         //City
+        [PersonalData]
         [DisplayName("City")]
         [StringLength(50, MinimumLength = 3)]
         [Required(ErrorMessage = "City is Required")]
         public string CityAddress { get; set; }
 
         //State
+        [PersonalData]
         [DisplayName("State")]
         [Required(ErrorMessage = "State is Required")]
         public string StateAddress { get; set; }
 
         //Zip
+        [PersonalData]
         [DisplayName("Zip Code")]
         [RegularExpression(@"(^\d{5}(-\d{4})?$)|(^[ABCEGHJKLMNPRSTVXYabceghjklmnprstvxy]{1}\d{1}[ABCEGHJKLMNPRSTVWXYZabceghjklmnprstv‌​xy]{1} *\d{1}[ABCEGHJKLMNPRSTVWXYZabceghjklmnprstvxy]{1}\d{1}$)", ErrorMessage = "That postal code is not a valid US or Canadian postal code.")]
         [Required(ErrorMessage = "Zip Code is Required")]
         public string ZipCodeAddress { get; set; }
 
         //Phone
+        [PersonalData]
         [Required(ErrorMessage = "Phone Number is Required")]
         [DataType(DataType.PhoneNumber)]
         [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Not a valid phone number")]
         public string Phone { get; set; }
 
         //Email
+        [PersonalData]
         [Required(ErrorMessage = "Email Address is Required")]
         [DataType(DataType.EmailAddress)]
         [MaxLength(50)]
