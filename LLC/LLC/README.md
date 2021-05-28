@@ -7,24 +7,24 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-[contributors-shield]: https://img.shields.io/github/contributors/blazorhero/CleanArchitecture.svg?style=flat-square
-[contributors-url]: https://github.com/blazorhero/CleanArchitecture/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/blazorhero/CleanArchitecture?style=flat-square
-[forks-url]: https://github.com/blazorhero/CleanArchitecture/network/members
-[stars-shield]: https://img.shields.io/github/stars/blazorhero/CleanArchitecture.svg?style=flat-square
-[stars-url]: https://img.shields.io/github/stars/blazorhero/CleanArchitecture?style=flat-square
-[issues-shield]: https://img.shields.io/github/issues/blazorhero/CleanArchitecture?style=flat-square
-[issues-url]: https://github.com/blazorhero/CleanArchitecture/issues
-[license-shield]: https://img.shields.io/github/license/blazorhero/CleanArchitecture?style=flat-square
-[license-url]: https://github.com/blazorhero/CleanArchitecture/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/Silcott/LegalLeadCloser.svg?style=flat-square
+[contributors-url]: https://github.com/Silcott/LegalLeadCloser/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Silcott/LegalLeadCloser?style=flat-square
+[forks-url]: https://github.com/Silcott/LegalLeadCloser/network/members
+[stars-shield]: https://img.shields.io/github/stars/Silcott/LegalLeadCloser.svg?style=flat-square
+[stars-url]: https://img.shields.io/github/stars/Silcott/LegalLeadCloser?style=flat-square
+[issues-shield]: https://img.shields.io/github/issues/Silcott/LegalLeadCloser?style=flat-square
+[issues-url]: https://github.com/Silcott/LegalLeadCloser/issues
+[license-shield]: https://img.shields.io/github/license/Silcott/LegalLeadCloser?style=flat-square
+[license-url]: https://github.com/Silcott/LegalLeadCloser/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/iammukeshm/
+[linkedin-url]: https://www.linkedin.com/in/jbsilcott/
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/blazorhero/CleanArchitecture">
-    <img src="https://codewithmukesh.com/wp-content/uploads/2021/05/BlazorHeroBannerv2.1.jpg" alt="Blazor Hero">
+  <a href="https://github.com/Silcott/LegalLeadCloser">
+    <img src="https://github.com/Silcott/LegalLeadCloser/LLC images/LLC_Logo_colored.png" alt="Blazor Hero">
   </a>
   <h3 align="center">BlazorHero - Clean Architecture Template</h3>
   <p align="center">
