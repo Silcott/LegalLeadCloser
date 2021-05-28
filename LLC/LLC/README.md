@@ -1,48 +1,19 @@
-﻿<!-- PROJECT SHIELDS -->
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-[contributors-shield]: https://img.shields.io/github/contributors/Silcott/LegalLeadCloser.svg?style=flat-square
-[contributors-url]: https://github.com/Silcott/LegalLeadCloser/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Silcott/LegalLeadCloser?style=flat-square
-[forks-url]: https://github.com/Silcott/LegalLeadCloser/network/members
-[stars-shield]: https://img.shields.io/github/stars/Silcott/LegalLeadCloser.svg?style=flat-square
-[stars-url]: https://img.shields.io/github/stars/Silcott/LegalLeadCloser?style=flat-square
-[issues-shield]: https://img.shields.io/github/issues/Silcott/LegalLeadCloser?style=flat-square
-[issues-url]: https://github.com/Silcott/LegalLeadCloser/issues
-[license-shield]: https://img.shields.io/github/license/Silcott/LegalLeadCloser?style=flat-square
-[license-url]: https://github.com/Silcott/LegalLeadCloser/blob/master/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/jbsilcott/
-
-[![.NET Core](https://github.com/Silcott/LegalLeadCloser/workflows/.NET%20Core/badge.svg)](https://github.com/Silcott/LegalLeadCloser/actions)
-
-
-<!-- PROJECT LOGO -->
+﻿<!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/Silcott/LegalLeadCloser">
+  
+  <h1 align="center">Legal Lead Closer</h1>
+<a href="https://github.com/Silcott/LegalLeadCloser">
     <img src="https://github.com/Silcott/LegalLeadCloser/blob/main/LLC%20images/LLC_Logo_colored.png?raw=true" alt="Legal Lead Closer">
   </a>
-  <h3 align="center">Legal Lead Closer</h3>
   <p align="center">
     The Ultimate Closing Guide To Grow Your Law Practice!
     <br />
-   <!-- 
-    <a href="https://codewithmukesh.com/blog/blazor-hero-quick-start-guide/"><strong>Read the Documentation »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/blazorhero/CleanArchitecture/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/blazorhero/CleanArchitecture/issues">Request Feature</a>
-    .
-    <a href="https://github.com/blazorhero/CleanArchitecture/issues">Request Documentation</a>
-	-->  
+ Better Practice equals Better Life! Grow your Sales and Business side of Law with the All-In-One Easy Guide For Attorneys to Quickly Close Clients and Develop Their Business Communication Skills.
+Founded by <br>
+<a href="https://ascent.legal">
+Ascent Legal
+</a>
 </p>
 </p>
 
