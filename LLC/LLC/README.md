@@ -20,6 +20,9 @@
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/jbsilcott/
 
+[![.NET Core](https://github.com/Silcott/LegalLeadCloser/workflows/.NET%20Core/badge.svg)](https://github.com/Silcott/LegalLeadCloser/actions)
+
+
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -28,8 +31,9 @@
   </a>
   <h3 align="center">Legal Lead Closer</h3>
   <p align="center">
-    Open Sourced Solution Template For Blazor Web-Assembly 5.0 built with MudBlazor Components
+    The Ultimate Closing Guide To Grow Your Law Practice!
     <br />
+   <!-- 
     <a href="https://codewithmukesh.com/blog/blazor-hero-quick-start-guide/"><strong>Read the Documentation »</strong></a>
     <br />
     <br />
@@ -38,8 +42,14 @@
     <a href="https://github.com/blazorhero/CleanArchitecture/issues">Request Feature</a>
     .
     <a href="https://github.com/blazorhero/CleanArchitecture/issues">Request Documentation</a>
-  </p>
+	-->  
 </p>
+</p>
+
+## Give a Star! :star:
+If you like this project and find it helpful to start your own or feel like giving, please star it! Thanks!
+
+
 
 ## About The Project :zap:
 

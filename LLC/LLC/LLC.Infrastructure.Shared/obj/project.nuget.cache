@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AyxOsWJuI8YFeNZLTBK3hDxAdsN/UKZpG8Q/Otl+IfKKpAcYeAdJxhkxufU1FlAVqog1Ae9RSSv1Cwc8yR81sw==",
+  "dgSpecHash": "A3glsJVGj5rBpgw/Lr8JcBqKrihHSIxepIXYqMa77+/oDkENHRT+DtU2uYPlDEdlsYskB+uXIT4FZIHPBNP2pQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC.Infrastructure.Shared\\LLC.Infrastructure.Shared.csproj",
+  "projectFilePath": "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC.Infrastructure.Shared\\LLC.Infrastructure.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\silco\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\silco\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

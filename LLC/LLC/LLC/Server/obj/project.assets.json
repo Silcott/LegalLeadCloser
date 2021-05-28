@@ -11290,11 +11290,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC\\Server\\LLC.Server.csproj",
+      "projectUniqueName": "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC\\Server\\LLC.Server.csproj",
       "projectName": "LLC.Server",
-      "projectPath": "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC\\Server\\LLC.Server.csproj",
+      "projectPath": "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC\\Server\\LLC.Server.csproj",
       "packagesPath": "C:\\Users\\silco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC\\Server\\obj\\",
+      "outputPath": "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -11315,20 +11315,20 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC.Application\\LLC.Application.csproj": {
-              "projectPath": "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC.Application\\LLC.Application.csproj"
+            "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC.Application\\LLC.Application.csproj": {
+              "projectPath": "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC.Application\\LLC.Application.csproj"
             },
-            "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC.Infrastructure.Shared\\LLC.Infrastructure.Shared.csproj": {
-              "projectPath": "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC.Infrastructure.Shared\\LLC.Infrastructure.Shared.csproj"
+            "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC.Infrastructure.Shared\\LLC.Infrastructure.Shared.csproj": {
+              "projectPath": "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC.Infrastructure.Shared\\LLC.Infrastructure.Shared.csproj"
             },
-            "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC.Infrastructure\\LLC.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC.Infrastructure\\LLC.Infrastructure.csproj"
+            "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC.Infrastructure\\LLC.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC.Infrastructure\\LLC.Infrastructure.csproj"
             },
-            "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC.Shared\\LLC.Shared.csproj": {
-              "projectPath": "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC.Shared\\LLC.Shared.csproj"
+            "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC.Shared\\LLC.Shared.csproj": {
+              "projectPath": "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC.Shared\\LLC.Shared.csproj"
             },
-            "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC\\Client\\LLC.Client.csproj": {
-              "projectPath": "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC\\Client\\LLC.Client.csproj"
+            "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC\\Client\\LLC.Client.csproj": {
+              "projectPath": "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC\\Client\\LLC.Client.csproj"
             }
           }
         }

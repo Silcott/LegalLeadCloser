@@ -1641,11 +1641,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC.Infrastructure.Shared\\LLC.Infrastructure.Shared.csproj",
+      "projectUniqueName": "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC.Infrastructure.Shared\\LLC.Infrastructure.Shared.csproj",
       "projectName": "LLC.Infrastructure.Shared",
-      "projectPath": "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC.Infrastructure.Shared\\LLC.Infrastructure.Shared.csproj",
+      "projectPath": "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC.Infrastructure.Shared\\LLC.Infrastructure.Shared.csproj",
       "packagesPath": "C:\\Users\\silco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC.Infrastructure.Shared\\obj\\",
+      "outputPath": "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC.Infrastructure.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -1666,8 +1666,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC.Application\\LLC.Application.csproj": {
-              "projectPath": "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC.Application\\LLC.Application.csproj"
+            "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC.Application\\LLC.Application.csproj": {
+              "projectPath": "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC.Application\\LLC.Application.csproj"
             }
           }
         }

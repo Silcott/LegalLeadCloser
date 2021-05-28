@@ -401,11 +401,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC.Shared\\LLC.Shared.csproj",
+      "projectUniqueName": "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC.Shared\\LLC.Shared.csproj",
       "projectName": "LLC.Shared",
-      "projectPath": "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC.Shared\\LLC.Shared.csproj",
+      "projectPath": "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC.Shared\\LLC.Shared.csproj",
       "packagesPath": "C:\\Users\\silco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\silco\\Documents\\LLC\\LLC\\LLC.Shared\\obj\\",
+      "outputPath": "C:\\Users\\silco\\Documents\\LegalLeadCloser\\LLC\\LLC\\LLC.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
