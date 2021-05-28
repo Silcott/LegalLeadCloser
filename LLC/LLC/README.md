@@ -13,11 +13,9 @@
 <h1 align="center">The Ultimate Closing Guide To Grow Your Law Practice!</h1>
 <br>
 <p align="center">
-<h2 align="center">
-Better Practice equals Better Life! 
-</h2>
-<br>
 <h3 align="center">
+- Better Practice...Better Life! -
+<br>
 Grow your Sales and Business side of Law with the All-In-One Easy Guide For Attorneys to Quickly Close Clients and Develop Their Business Communication Skills.
 <br>
 Founded by 
