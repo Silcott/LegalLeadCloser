@@ -4,7 +4,7 @@
   <h1 align="center">Legal Lead Closer</h1>
 <br>
 <a href="https://github.com/Silcott/LegalLeadCloser">
-<img src="https://github.com/Silcott/LegalLeadCloser/blob/main/LLC%20images/LLC_Logo_colored.png?raw=true" alt="Legal Lead Closer" align="center">
+<img  align="center" src="https://github.com/Silcott/LegalLeadCloser/blob/main/LLC%20images/LLC_Logo_colored.png?raw=true" alt="Legal Lead Closer">
 </a>
 <br>
 </p>
