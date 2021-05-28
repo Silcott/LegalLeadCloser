@@ -3,8 +3,10 @@
 <p align="center">
   <h1 align="center">Legal Lead Closer</h1>
 <br>
+<p align="center">
 <a href="https://github.com/Silcott/LegalLeadCloser">
-<img  align="center" src="https://github.com/Silcott/LegalLeadCloser/blob/main/LLC%20images/LLC_Logo_colored.png?raw=true" alt="Legal Lead Closer">
+<img src="https://github.com/Silcott/LegalLeadCloser/blob/main/LLC%20images/LLC_Logo_colored.png?raw=true" alt="Legal Lead Closer">
+</p>
 </a>
 <br>
 </p>
