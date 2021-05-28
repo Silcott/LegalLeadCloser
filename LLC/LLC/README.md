@@ -62,10 +62,7 @@ So, here is an in-depth video that takes you through the BlazorHero Project! Do 
 Has this Project helped you learn something New? or Helped you at work? Do Consider Supporting. 
 Here are a few ways by which you can support.
 
--   Leave a star! :star:
 -   Recommend this awesome project to your colleagues. 🥇
--   Leave your feedback / comments regarding this project in the comments section on my blog [Blazor Hero Blog](https://codewithmukesh.com/blog/blazor-hero-quick-start-guide/)
--   Do consider endorsing me on LinkedIn for ASP.NET Core - [Connect via LinkedIn](https://codewithmukesh.com/linkedin) 🦸
 -   Or, If you want to support this project on the long run, [consider buying me a coffee](https://www.buymeacoffee.com/jbsilcott)! ☕
 
 <a href="https://www.buymeacoffee.com/jbsilcott" target="_blank"><img src="https://codewithmukesh.com/wp-content/uploads/2021/04/bmclogo.jpg" alt="Buy Me A Coffee" width="200"  style="height: 60px !important;width: 200px !important;" ></a>
