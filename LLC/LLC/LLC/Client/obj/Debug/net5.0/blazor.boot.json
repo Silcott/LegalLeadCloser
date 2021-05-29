@@ -258,10 +258,6 @@
     },
     "lazyAssembly": null,
     "pdb": {
-      "LLC.Client.Infrastructure.pdb": "sha256-mtqrK4atWWCioahtI9fhvxBbukzsxo9MKiIEEqOPq7A=",
-      "LLC.Shared.pdb": "sha256-GtZwlAFy2A5iu8XPR\/a3tikmSH3DSt\/5ko2IRGhu3DM=",
-      "LLC.Application.pdb": "sha256-CGG5KGfhaqcNJd\/g8cVUtfnk1U2e9OOW3SFWud2GFTM=",
-      "LLC.Domain.pdb": "sha256-RxbPYYZU8h4tjKeFIcYtSnA7smRrDv70zBMI7FQv6Sc=",
       "LLC.Client.pdb": "sha256-Sx7wGWg1ojefcODyF9JfDqX8eWhH0Zl1K2yUj\/m6OBA="
     },
     "runtime": {
