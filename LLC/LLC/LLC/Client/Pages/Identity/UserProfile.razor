@@ -16,6 +16,22 @@
                     <MudGrid>
                         <MudCheckBox @bind-Checked="@Active" Label="@localizer["Active?"]" Color="Color.Primary"></MudCheckBox>
                         <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto" OnClick="ToggleUserStatus" ButtonType="ButtonType.Submit">@localizer["Save Changes"]</MudButton>
+                        <MudButton Variant="Variant.Filled" Color="Color.Secondary" Class="ml-auto" OnClick="DeleteUser" ButtonType="ButtonType.Submit">@localizer["Delete User"]</MudButton>
+                        <MudChip>@state</MudChip>
+
+                        <MudMessageBox @ref="mbox" Title="Warning" CancelText="Cancel">
+                            <MessageContent>
+                                Deleting can <b><i>not</i></b> be undone!
+                            </MessageContent>
+                            <YesButton>
+                                <MudButton Variant="Variant.Filled" Color="Color.Error" StartIcon="@Icons.Material.Filled.DeleteForever">Delete!</MudButton>
+                            </YesButton>
+                        </MudMessageBox>
+                        @code
+{
+                            MudMessageBox mbox { get; set; }
+                            string state = "Message box hasn't been opened yet";
+                        }
                     </MudGrid>
                 </MudCardContent>
             </MudCard>

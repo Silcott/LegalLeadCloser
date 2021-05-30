@@ -1,4 +1,6 @@
-﻿using LLC.Application.Requests.Identity;
+﻿using LLC.Application.Interfaces.Services.Identity;
+using LLC.Application.Requests.Identity;
+using LLC.Client.Infrastructure.Managers.Identity.Users;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
 using System.Collections.Generic;
@@ -41,6 +43,25 @@ namespace LLC.Client.Pages.Identity
                 foreach (var error in result.Messages)
                 {
                     _snackBar.Add(localizer[error], Severity.Error);
+                }
+            }
+        }
+
+        private async Task DeleteUser()
+        {
+            bool? result = await mbox.Show();
+                    state = result == null ? "Cancelled" : "Deleted!";
+                    StateHasChanged();
+            if (state.Equals("Deleted!"))
+            {
+            var request = new ToggleUserStatusRequest { UserId = Id };
+
+                await _userManager.DeleteUserAsync(request);
+
+                if (Id == null)
+                {
+                    _navigationManager.NavigateTo("/identity/");
+
                 }
             }
         }

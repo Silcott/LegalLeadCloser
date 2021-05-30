@@ -53,7 +53,11 @@ namespace LLC.Client.Infrastructure.Managers.Identity.Users
             var response = await _httpClient.PutAsJsonAsync(Routes.UserEndpoints.GetUserRoles(request.UserId), request);
             return await response.ToResult<UserRolesResponse>();
         }
-
+        public async Task<IResult> DeleteUserAsync(ToggleUserStatusRequest request)
+        {
+            var response = await _httpClient.PostAsJsonAsync(Routes.UserEndpoints.DeleteUser, request);
+            return await response.ToResult();
+        }
         public async Task<IResult> ForgotPasswordAsync(ForgotPasswordRequest model)
         {
             var response = await _httpClient.PostAsJsonAsync(Routes.UserEndpoints.ForgotPassword, model);

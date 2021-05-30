@@ -22,6 +22,8 @@ namespace LLC.Client.Infrastructure.Managers.Identity.Users
 
         Task<IResult> ToggleUserStatusAsync(ToggleUserStatusRequest request);
 
+        Task<IResult> DeleteUserAsync(ToggleUserStatusRequest request);
+
         Task<IResult> UpdateRolesAsync(UpdateUserRolesRequest request);
     }
 }

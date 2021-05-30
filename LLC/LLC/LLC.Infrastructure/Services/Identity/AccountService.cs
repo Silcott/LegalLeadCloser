@@ -65,7 +65,17 @@ namespace LLC.Infrastructure.Services.Identity
             await _signInManager.RefreshSignInAsync(user);
             return identityResult.Succeeded ? await Result.SuccessAsync() : await Result.FailAsync(errors);
         }
+        public async Task<IResult> DeleteUser(string userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user != null)
+            {
+                await _userManager.DeleteAsync(user);
+                return await Result.SuccessAsync(_localizer["User Deleted"]);
 
+            }
+            return await Result.SuccessAsync(_localizer["User Not Deleted"]);
+        }
         public async Task<IResult<string>> GetProfilePictureAsync(string userId)
         {
             var user = await _userManager.FindByIdAsync(userId);

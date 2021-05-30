@@ -19,6 +19,8 @@ namespace LLC.Application.Interfaces.Services.Identity
 
         Task<IResult> ToggleUserStatusAsync(ToggleUserStatusRequest request);
 
+        Task<IResult> DeleteUserAsync(ToggleUserStatusRequest request);
+
         Task<IResult<UserRolesResponse>> GetRolesAsync(string id);
 
         Task<IResult> UpdateRolesAsync(UpdateUserRolesRequest request);

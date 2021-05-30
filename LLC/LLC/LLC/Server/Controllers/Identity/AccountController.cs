@@ -28,6 +28,13 @@ namespace LLC.Server.Controllers.Identity
             return Ok(response);
         }
 
+        [HttpPut(nameof(DeleteUser))]
+        public async Task<ActionResult> DeleteUser(string userId)
+        {
+            var response = await _accountService.DeleteUser( _currentUser.UserId);
+            return Ok(response);
+        }
+
         [HttpPut(nameof(ChangePassword))]
         public async Task<ActionResult> ChangePassword(ChangePasswordRequest model)
         {

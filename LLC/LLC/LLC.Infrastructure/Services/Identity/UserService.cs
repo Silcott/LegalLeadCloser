@@ -20,6 +20,7 @@ using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Localization;
 
+
 namespace LLC.Infrastructure.Services.Identity
 {
     public class UserService : IUserService
@@ -134,7 +135,19 @@ namespace LLC.Infrastructure.Services.Identity
             }
             return await Result.SuccessAsync();
         }
+        //TODO clean
+        public async Task<IResult>DeleteUserAsync(ToggleUserStatusRequest request)
+        {
+            var user = await _userManager.Users.Where(u => u.Id == request.UserId).FirstOrDefaultAsync();
 
+            if (user != null)
+            {
+                await _userManager.DeleteAsync(user);
+                return await Result.SuccessAsync(_localizer["User Deleted"]);
+
+            }
+            return await Result.SuccessAsync(_localizer["User Not Deleted"]);
+        }
         public async Task<IResult<UserRolesResponse>> GetRolesAsync(string userId)
         {
             var viewModel = new List<UserRoleModel>();
@@ -159,6 +172,7 @@ namespace LLC.Infrastructure.Services.Identity
             return await Result<UserRolesResponse>.SuccessAsync(result);
         }
 
+        //TODO check if this is email reason for authenitcation
         public async Task<IResult> UpdateRolesAsync(UpdateUserRolesRequest request)
         {
             var user = await _userManager.FindByIdAsync(request.UserId);

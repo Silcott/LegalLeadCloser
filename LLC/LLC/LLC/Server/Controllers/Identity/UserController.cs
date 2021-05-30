@@ -85,5 +85,13 @@ namespace LLC.Server.Controllers.Identity
         {
             return Ok(await _userService.ResetPasswordAsync(request));
         }
+
+
+        //[Authorize(Policy = Permissions.Users.Delete)]
+        [HttpPost("delete-user")]
+        public async Task<IActionResult> DeleteUserAsync(ToggleUserStatusRequest request)
+        {
+            return Ok(await _userService.DeleteUserAsync(request));
+        }
     }
 }

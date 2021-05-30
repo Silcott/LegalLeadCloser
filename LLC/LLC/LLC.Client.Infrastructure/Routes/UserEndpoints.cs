@@ -18,5 +18,7 @@
         public static string ToggleUserStatus = "api/identity/user/toggle-status";
         public static string ForgotPassword = "api/identity/user/forgot-password";
         public static string ResetPassword = "api/identity/user/reset-password";
+        public static string DeleteUser = "api/identity/user/delete-user";
+
     }
 }

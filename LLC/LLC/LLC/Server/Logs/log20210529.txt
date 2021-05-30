@@ -14,3 +14,48 @@
 2021-05-29 06:54:11.442 -04:00 [INF] Hosting environment: Development
 2021-05-29 06:54:11.443 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
 2021-05-29 07:28:41.266 -04:00 [ERR] No such host is known.
+2021-05-29 07:38:32.174 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-29 07:38:32.212 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-29 07:38:32.214 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-29 07:38:32.215 -04:00 [INF] Hosting environment: Development
+2021-05-29 07:38:32.215 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-05-29 09:13:07.014 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-29 09:13:07.056 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-29 09:13:07.058 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-29 09:13:07.059 -04:00 [INF] Hosting environment: Development
+2021-05-29 09:13:07.060 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-05-29 09:17:58.650 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-29 09:17:58.685 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-29 09:17:58.687 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-29 09:17:58.688 -04:00 [INF] Hosting environment: Development
+2021-05-29 09:17:58.688 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-05-29 09:18:37.795 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-29 09:18:37.831 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-29 09:18:37.834 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-29 09:18:37.834 -04:00 [INF] Hosting environment: Development
+2021-05-29 09:18:37.835 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-05-29 09:22:35.786 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-29 09:22:35.821 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-29 09:22:35.823 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-29 09:22:35.824 -04:00 [INF] Hosting environment: Development
+2021-05-29 09:22:35.825 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-05-29 09:27:34.244 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-29 09:27:34.284 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-29 09:27:34.286 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-29 09:27:34.286 -04:00 [INF] Hosting environment: Development
+2021-05-29 09:27:34.287 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-05-29 09:29:42.561 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-29 09:29:42.596 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-29 09:29:42.598 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-29 09:29:42.599 -04:00 [INF] Hosting environment: Development
+2021-05-29 09:29:42.599 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-05-29 18:41:28.462 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-29 18:41:28.497 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-29 18:41:28.499 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-29 18:41:28.500 -04:00 [INF] Hosting environment: Development
+2021-05-29 18:41:28.500 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-05-29 18:44:37.226 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-29 18:44:37.262 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-29 18:44:37.265 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-29 18:44:37.266 -04:00 [INF] Hosting environment: Development
+2021-05-29 18:44:37.267 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
