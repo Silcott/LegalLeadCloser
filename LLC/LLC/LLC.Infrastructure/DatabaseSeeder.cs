@@ -16,10 +16,10 @@ namespace LLC.Infrastructure
     {
         private readonly ILogger<DatabaseSeeder> _logger;
         private readonly BlazorHeroContext _db;
-        private readonly UserManager<BlazorHeroUser> _userManager;
+        private readonly UserManager<LLCUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
 
-        public DatabaseSeeder(UserManager<BlazorHeroUser> userManager, RoleManager<IdentityRole> roleManager, BlazorHeroContext db, ILogger<DatabaseSeeder> logger)
+        public DatabaseSeeder(UserManager<LLCUser> userManager, RoleManager<IdentityRole> roleManager, BlazorHeroContext db, ILogger<DatabaseSeeder> logger)
         {
             _userManager = userManager;
             _roleManager = roleManager;
@@ -60,7 +60,7 @@ namespace LLC.Infrastructure
                     _logger.LogInformation("Seeded Administrator Role.");
                 }
                 //Check if User Exists
-                var superUser = new BlazorHeroUser
+                var superUser = new LLCUser
                 {
                     FirstName = "James",
                     LastName = "Silcott",
@@ -101,7 +101,7 @@ namespace LLC.Infrastructure
                     _logger.LogInformation("Seeded Basic Role.");
                 }
                 //Check if User Exists
-                var basicUser = new BlazorHeroUser
+                var basicUser = new LLCUser
                 {
                     FirstName = "Joe",
                     LastName = "Sanchez",

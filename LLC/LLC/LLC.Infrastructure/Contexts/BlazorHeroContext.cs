@@ -79,7 +79,7 @@ namespace LLC.Infrastructure.Contexts
                     .HasForeignKey(d => d.ToUserId)
                     .OnDelete(DeleteBehavior.ClientSetNull);
             });
-            builder.Entity<BlazorHeroUser>(entity =>
+            builder.Entity<LLCUser>(entity =>
             {
                 entity.ToTable(name: "Users", "Identity");
             });

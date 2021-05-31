@@ -20,14 +20,14 @@ namespace LLC.Infrastructure.Services.Identity
     public class RoleService : IRoleService
     {
         private readonly RoleManager<IdentityRole> _roleManager;
-        private readonly UserManager<BlazorHeroUser> _userManager;
+        private readonly UserManager<LLCUser> _userManager;
         private readonly IStringLocalizer<RoleService> _localizer;
         private readonly IMapper _mapper;
 
         public RoleService(
             RoleManager<IdentityRole> roleManager,
             IMapper mapper,
-            UserManager<BlazorHeroUser> userManager,
+            UserManager<LLCUser> userManager,
             IStringLocalizer<RoleService> localizer)
         {
             _roleManager = roleManager;

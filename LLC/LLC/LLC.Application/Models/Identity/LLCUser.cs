@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LLC.Application.Models.Identity
 {
-    public class BlazorHeroUser : IdentityUser, IAuditableEntity
+    public class LLCUser : IdentityUser, IAuditableEntity
     {
         public string FirstName { get; set; }
 
@@ -32,7 +32,7 @@ namespace LLC.Application.Models.Identity
         public virtual ICollection<ChatHistory> ChatHistoryFromUsers { get; set; }
         public virtual ICollection<ChatHistory> ChatHistoryToUsers { get; set; }
 
-        public BlazorHeroUser()
+        public LLCUser()
         {
             ChatHistoryFromUsers = new HashSet<ChatHistory>();
             ChatHistoryToUsers = new HashSet<ChatHistory>();

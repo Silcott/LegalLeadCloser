@@ -1,0 +1,10 @@
+2021-05-31 10:44:34.926 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-31 10:44:34.968 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-31 10:44:34.971 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-31 10:44:34.972 -04:00 [INF] Hosting environment: Development
+2021-05-31 10:44:34.972 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-05-31 10:45:01.288 -04:00 [INF] Application is shutting down...
+2021-05-31 10:45:02.364 -04:00 [FTL] Unable to start Kestrel.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)

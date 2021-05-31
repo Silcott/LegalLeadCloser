@@ -8,8 +8,8 @@ namespace LLC.Infrastructure.Mappings
     {
         public UserProfile()
         {
-            CreateMap<UserResponse, BlazorHeroUser>().ReverseMap();
-            CreateMap<ChatUserResponse, BlazorHeroUser>().ReverseMap()
+            CreateMap<UserResponse, LLCUser>().ReverseMap();
+            CreateMap<ChatUserResponse, LLCUser>().ReverseMap()
                 .ForMember(dest => dest.EmailAddress, source => source.MapFrom(source => source.Email)); //Specific Mapping
         }
     }

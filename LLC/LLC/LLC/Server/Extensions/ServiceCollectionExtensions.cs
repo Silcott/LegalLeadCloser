@@ -102,7 +102,7 @@ namespace LLC.Server.Extensions
             services
                 .AddSingleton<IAuthorizationPolicyProvider, PermissionPolicyProvider>()
                 .AddScoped<IAuthorizationHandler, PermissionAuthorizationHandler>()
-                .AddIdentity<BlazorHeroUser, IdentityRole>(options =>
+                .AddIdentity<LLCUser, IdentityRole>(options =>
                 {
                     options.Password.RequiredLength = 6;
                     options.Password.RequireDigit = false;

@@ -25,14 +25,14 @@ namespace LLC.Infrastructure.Services.Identity
 {
     public class UserService : IUserService
     {
-        private readonly UserManager<BlazorHeroUser> _userManager;
+        private readonly UserManager<LLCUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IMailService _mailService;
         private readonly IStringLocalizer<UserService> _localizer;
         private readonly IMapper _mapper;
 
         public UserService(
-            UserManager<BlazorHeroUser> userManager,
+            UserManager<LLCUser> userManager,
             IMapper mapper,
             RoleManager<IdentityRole> roleManager,
             IMailService mailService,
@@ -59,7 +59,7 @@ namespace LLC.Infrastructure.Services.Identity
             {
                 return await Result.FailAsync($"{_localizer["Username"]} '{request.UserName}' {_localizer["is already taken."]}");
             }
-            var user = new BlazorHeroUser
+            var user = new LLCUser
             {
                 Email = request.Email,
                 FirstName = request.FirstName,
@@ -102,7 +102,7 @@ namespace LLC.Infrastructure.Services.Identity
             }
         }
 
-        private async Task<string> SendVerificationEmail(BlazorHeroUser user, string origin)
+        private async Task<string> SendVerificationEmail(LLCUser user, string origin)
         {
             var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
             code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));

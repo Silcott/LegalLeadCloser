@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace LLC.Infrastructure.Contexts
 {
-    public abstract class AuditableContext : IdentityDbContext<BlazorHeroUser, IdentityRole, string>
+    public abstract class AuditableContext : IdentityDbContext<LLCUser, IdentityRole, string>
     {
         public AuditableContext(DbContextOptions options) : base(options)
         {

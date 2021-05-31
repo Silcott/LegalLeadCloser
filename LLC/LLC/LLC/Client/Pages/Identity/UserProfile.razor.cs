@@ -46,7 +46,7 @@ namespace LLC.Client.Pages.Identity
                 }
             }
         }
-
+        private TokenRequest tokenModel = new TokenRequest();
         private async Task DeleteUser()
         {
             bool? result = await mbox.Show();
@@ -55,13 +55,20 @@ namespace LLC.Client.Pages.Identity
             if (state.Equals("Deleted!"))
             {
             var request = new ToggleUserStatusRequest { UserId = Id };
-
-                await _userManager.DeleteUserAsync(request);
-
                 if (Id == null)
                 {
-                    _navigationManager.NavigateTo("/identity/");
+                _snackBar.Add(localizer["Id is null"], Severity.Success);
 
+                }
+                //TODO setup admin account email that no one else can create
+                else if (tokenModel.Email == "silcott.jb@outlook.com")
+                {
+                    _snackBar.Add(localizer["Can't delete Admin"], Severity.Success);
+                }
+                else
+                {
+                    await _userManager.DeleteUserAsync(request);
+                    _navigationManager.NavigateTo("/identity/");
                 }
             }
         }
