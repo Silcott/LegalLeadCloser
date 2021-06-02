@@ -1194,3 +1194,13 @@ Error Number:207,State:1,Class:16
 2021-06-02 11:04:30.906 -04:00 [INF] Application started. Press Ctrl+C to shut down.
 2021-06-02 11:04:30.907 -04:00 [INF] Hosting environment: Development
 2021-06-02 11:04:30.907 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-06-02 11:14:23.269 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-02 11:14:23.306 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-02 11:14:23.308 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-02 11:14:23.308 -04:00 [INF] Hosting environment: Development
+2021-06-02 11:14:23.309 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-06-02 11:25:04.774 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-02 11:25:04.810 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-02 11:25:04.813 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-02 11:25:04.813 -04:00 [INF] Hosting environment: Development
+2021-06-02 11:25:04.814 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server

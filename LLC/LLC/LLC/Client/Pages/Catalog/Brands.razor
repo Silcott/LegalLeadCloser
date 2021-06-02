@@ -16,7 +16,7 @@
         <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.Id)">@localizer["Id"]</MudTableSortLabel></MudTh>
         <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.FirstName)">@localizer["First Name"]</MudTableSortLabel></MudTh>
         <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.LastName)">@localizer["Last Name"]</MudTableSortLabel></MudTh>
-        <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.CourtDate)">@localizer["Court Date"]</MudTableSortLabel></MudTh>\
+        <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.CourtDate)">@localizer["Court Date"]</MudTableSortLabel></MudTh>
         <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.CourtLocation)">@localizer["Court Location"]</MudTableSortLabel></MudTh>
         <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.Phone)">@localizer["Phone"]</MudTableSortLabel></MudTh>
         <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.Email)">@localizer["Email"]</MudTableSortLabel></MudTh>
@@ -27,9 +27,9 @@
     <RowTemplate>
         <MudTd DataLabel="Id">@context.Id</MudTd>
         <MudTd DataLabel="First Name">
-            <MudHighlighter Text="@context.FirstName" HighlightedText="@searchString" />
-        </MudTd>
-        <MudTd DataLabel="Last Name">@context.LastName</MudTd>
+            <MudHighlighter Text="@context.FirstName" HighlightedText="@searchString" /></MudTd>
+        <MudTd DataLabel="Last Name">
+            <MudHighlighter Text="@context.LastName" HighlightedText="@searchString" /></MudTd>
         <MudTd DataLabel="Court Date">@context.CourtDate</MudTd>
         <MudTd DataLabel="Court Location">@context.CourtLocation</MudTd>
         <MudTd DataLabel="Phone">@context.Phone</MudTd>
