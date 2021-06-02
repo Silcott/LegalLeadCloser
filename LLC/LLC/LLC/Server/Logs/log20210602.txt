@@ -1114,3 +1114,83 @@ Error Number:207,State:1,Class:16
 2021-06-02 10:04:33.901 -04:00 [INF] Application started. Press Ctrl+C to shut down.
 2021-06-02 10:04:33.901 -04:00 [INF] Hosting environment: Development
 2021-06-02 10:04:33.902 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-06-02 10:07:16.660 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-02 10:07:16.694 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-02 10:07:16.697 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-02 10:07:16.697 -04:00 [INF] Hosting environment: Development
+2021-06-02 10:07:16.698 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-06-02 10:08:29.658 -04:00 [ERR] No such host is known.
+2021-06-02 10:19:03.560 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-02 10:19:03.597 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-02 10:19:03.601 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-02 10:19:03.601 -04:00 [INF] Hosting environment: Development
+2021-06-02 10:19:03.602 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-06-02 10:28:59.885 -04:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CreatedBy], [u].[CreatedOn], [u].[DeletedOn], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[IsActive], [u].[IsConfirmedEmail], [u].[IsDeleted], [u].[LastModifiedBy], [u].[LastModifiedOn], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ProfilePictureDataUrl], [u].[RefreshToken], [u].[RefreshTokenExpiryTime], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Identity].[Users] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2021-06-02 10:28:59.960 -04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'LLC.Infrastructure.Contexts.BlazorHeroContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'IsConfirmedEmail'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:7c44a48f-27a7-49c5-a3b2-e4b9ba861931
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'IsConfirmedEmail'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:7c44a48f-27a7-49c5-a3b2-e4b9ba861931
+Error Number:207,State:1,Class:16
+2021-06-02 10:31:29.348 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-02 10:31:29.384 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-02 10:31:29.386 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-02 10:31:29.387 -04:00 [INF] Hosting environment: Development
+2021-06-02 10:31:29.387 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-06-02 10:38:17.146 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-02 10:38:17.185 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-02 10:38:17.187 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-02 10:38:17.188 -04:00 [INF] Hosting environment: Development
+2021-06-02 10:38:17.188 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-06-02 10:41:30.562 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-02 10:41:30.604 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-02 10:41:30.607 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-02 10:41:30.607 -04:00 [INF] Hosting environment: Development
+2021-06-02 10:41:30.608 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-06-02 10:43:01.121 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-02 10:43:01.157 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-02 10:43:01.159 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-02 10:43:01.159 -04:00 [INF] Hosting environment: Development
+2021-06-02 10:43:01.160 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-06-02 10:45:03.199 -04:00 [ERR] No such host is known.
+2021-06-02 10:58:10.022 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-02 10:58:10.058 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-02 10:58:10.060 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-02 10:58:10.060 -04:00 [INF] Hosting environment: Development
+2021-06-02 10:58:10.061 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-06-02 10:59:17.027 -04:00 [ERR] No such host is known.
+2021-06-02 11:04:30.866 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-02 11:04:30.904 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-02 11:04:30.906 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-02 11:04:30.907 -04:00 [INF] Hosting environment: Development
+2021-06-02 11:04:30.907 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server

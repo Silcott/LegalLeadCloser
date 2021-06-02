@@ -27,6 +27,8 @@ namespace LLC.Application.Models.Identity
 
         public DateTime? DeletedOn { get; set; }
         public bool IsActive { get; set; }
+        //public bool EmailConfirmed { get; set; }
+
         public string RefreshToken { get; set; }
         public DateTime RefreshTokenExpiryTime { get; set; }
         public virtual ICollection<ChatHistory> ChatHistoryFromUsers { get; set; }

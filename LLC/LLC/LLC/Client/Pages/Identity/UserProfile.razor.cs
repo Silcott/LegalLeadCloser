@@ -20,6 +20,8 @@ namespace LLC.Client.Pages.Identity
         public string Description { get; set; }
 
         public bool Active { get; set; }
+        public bool EmailConfirmed { get; set; }
+
         private char FirstLetterOfName { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -31,7 +33,7 @@ namespace LLC.Client.Pages.Identity
 
         private async Task ToggleUserStatus()
         {
-            var request = new ToggleUserStatusRequest { ActivateUser = Active, UserId = Id };
+            var request = new ToggleUserStatusRequest { ActivateUser = Active, UserId = Id, AutoConfirmEmail = EmailConfirmed };
             var result = await _userManager.ToggleUserStatusAsync(request);
             if (result.Succeeded)
             {
@@ -60,15 +62,15 @@ namespace LLC.Client.Pages.Identity
                 _snackBar.Add(localizer["Id is null"], Severity.Success);
 
                 }
-                //TODO setup admin account email that no one else can create
-                else if (tokenModel.Email == "silcott.jb@outlook.com")
+                //TODO setup admin account email that no one else can create - may need to change back to outlook
+                else if (tokenModel.Email == "ascent.legal.us@gmail.com")
                 {
                     _snackBar.Add(localizer["Can't delete Admin"], Severity.Success);
                 }
                 else
                 {
                     await _userManager.DeleteUserAsync(request);
-                    _navigationManager.NavigateTo("/identity/");
+                    _navigationManager.NavigateTo("/identity/users");
                 }
             }
         }

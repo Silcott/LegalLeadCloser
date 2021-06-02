@@ -294,7 +294,7 @@ using LLC.Shared.Constants.Role;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 31 "C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Client\Pages\Identity\UserProfile.razor"
+#line 32 "C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Client\Pages\Identity\UserProfile.razor"
  
                             MudMessageBox mbox { get; set; }
                             string state = "Message box hasn't been opened yet";

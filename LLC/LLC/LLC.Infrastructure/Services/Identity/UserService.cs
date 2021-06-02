@@ -81,7 +81,7 @@ namespace LLC.Infrastructure.Services.Identity
                         var verificationUri = await SendVerificationEmail(user, origin);
                         var mailRequest = new MailRequest
                         {
-                            From = "ascent.legal.us.noreply@gmail.com",
+                            From = "ascent.legal.us@gmail.com",
                             To = user.Email,
                             Body = $"{_localizer["Please confirm your account by"]} <a href='{verificationUri}'>{_localizer["clicking here"]}</a>.",
                             Subject = _localizer["Confirm Registration"]
@@ -131,6 +131,7 @@ namespace LLC.Infrastructure.Services.Identity
             if (user != null)
             {
                 user.IsActive = request.ActivateUser;
+                user.EmailConfirmed = request.AutoConfirmEmail;
                 var identityResult = await _userManager.UpdateAsync(user);
             }
             return await Result.SuccessAsync();
