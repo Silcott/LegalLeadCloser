@@ -1,32 +1,64 @@
 ﻿@page "/catalog/clients"
 @using LLC.Application.Features.Brands.Queries.GetAll
 @inject Microsoft.Extensions.Localization.IStringLocalizer<Brands> localizer
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@using Microsoft.AspNetCore.Components.Authorization
+@using System.Security.Claims
 
 <HeroTitle Title="@localizer["Clients"]" Description="@localizer["Manage Clients."]" />
 <MudTable Hover="true" Elevation="25" Items="BrandList" Dense="@_dense" Bordered="@_bordered" Striped="@_striped" Filter="new Func<GetAllBrandsResponse, bool>(Search)" @bind-brand="brand">
     <ToolBarContent>
         <div class="justify-center mud-text-align-center">
-            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="(()=>InvokeModal())">@localizer["Create"]</MudButton>
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="(() => InvokeModal())">@localizer["Create"]</MudButton>
             <MudButton Variant="Variant.Filled" OnClick="GetBrandsAsync" Color="Color.Secondary">@localizer["Reload"]</MudButton>
         </div>
         <MudToolBarSpacer />
         <MudTextField @bind-Value="searchString" Immediate="true" Placeholder="@localizer["Search for Clients"]" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0 mb-3"></MudTextField>
     </ToolBarContent>
     <HeaderContent>
-            <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.Id)">@localizer["Id"]</MudTableSortLabel></MudTh>
-            <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.FirstName)">@localizer["First Name"]</MudTableSortLabel></MudTh>
-            <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.LastName)">@localizer["Last Name"]</MudTableSortLabel></MudTh>
-            <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.CourtDate)">@localizer["Court Date"]</MudTableSortLabel></MudTh>
-            <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.CourtLocation)">@localizer["Court Location"]</MudTableSortLabel></MudTh>
-            <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.Phone)">@localizer["Phone"]</MudTableSortLabel></MudTh>
-            <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.Email)">@localizer["Email"]</MudTableSortLabel></MudTh>
-            <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.Birthdate)">@localizer["Birthdate"]</MudTableSortLabel></MudTh>
-        
-            <MudTh Style="text-align:right">@localizer["Actions"]</MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.Id)">@localizer["Id"]</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.FirstName)">@localizer["First Name"]</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.LastName)">@localizer["Last Name"]</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.CourtDate)">@localizer["Court Date"]</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.CourtLocation)">@localizer["Court Location"]</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.Phone)">@localizer["Phone"]</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.Email)">@localizer["Email"]</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.Birthdate)">@localizer["Birthdate"]</MudTableSortLabel></MudTh>
+        @if (_authorizationService.AuthorizeAsync(AuthenticationStateProviderUser, Permissions.Roles.View).Result.Succeeded || _authorizationService.AuthorizeAsync(AuthenticationStateProviderUser, Permissions.Users.View).Result.Succeeded)
+        {
+            <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.CreatedBy)">@localizer["Created By"]</MudTableSortLabel></MudTh>
+        }
+        <MudTh Style="text-align:right">@localizer["Actions"]</MudTh>
     </HeaderContent>
-    
+
     <RowTemplate>
-        @if (context.CreatedBy == CurrentUserId)
+        @if (_authorizationService.AuthorizeAsync(AuthenticationStateProviderUser, Permissions.Roles.View).Result.Succeeded || _authorizationService.AuthorizeAsync(AuthenticationStateProviderUser, Permissions.Users.View).Result.Succeeded)
+        {
+
+            <MudTd DataLabel="Id">@context.Id</MudTd>
+            <MudTd DataLabel="First Name">
+                <MudHighlighter Text="@context.FirstName" HighlightedText="@searchString" />
+            </MudTd>
+            <MudTd DataLabel="Last Name">
+                <MudHighlighter Text="@context.LastName" HighlightedText="@searchString" />
+            </MudTd>
+            <MudTd DataLabel="Court Date">@context.CourtDate</MudTd>
+            <MudTd DataLabel="Court Location">@context.CourtLocation</MudTd>
+            <MudTd DataLabel="Phone">@context.Phone</MudTd>
+            <MudTd DataLabel="Email">@context.Email</MudTd>
+            <MudTd DataLabel="Birthdate">@context.Birthdate</MudTd>
+            <MudTd DataLabel="Created By">@context.CreatedBy</MudTd>
+
+
+
+            <MudTd DataLabel="Actions" Style="text-align:right">
+                <MudMenu Label="@localizer["Actions"]" Variant="Variant.Filled" DisableElevation="true" EndIcon="@Icons.Filled.KeyboardArrowDown" IconColor="Color.Secondary">
+                    <MudMenuItem @onclick="@(() => InvokeModal(@context.Id))">@localizer["Edit"]</MudMenuItem>
+                    <MudMenuItem @onclick="@(() => Delete(@context.Id))">@localizer["Delete"]</MudMenuItem>
+                </MudMenu>
+            </MudTd>
+        }
+        else if (context.CreatedBy == CurrentUserId)
         {
             <MudTd DataLabel="Id">@context.Id</MudTd>
             <MudTd DataLabel="First Name">
@@ -50,7 +82,7 @@
             </MudTd>
         }
     </RowTemplate>
-        
+
     <FooterContent>
         <MudSwitch @bind-Checked="@_dense" Color="Color.Secondary" Style="margin-left: 5px;">@localizer["Dense"]</MudSwitch>
         <MudSwitch @bind-Checked="@_striped" Color="Color.Tertiary" Style="margin-left: 5px;">@localizer["Striped"]</MudSwitch>
@@ -60,3 +92,13 @@
         <TablePager />
     </PagerContent>
 </MudTable>
+
+
+@code {
+    private ClaimsPrincipal AuthenticationStateProviderUser { get; set; }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        AuthenticationStateProviderUser = await _stateProvider.GetAuthenticationStateProviderUserAsync();
+    }
+}

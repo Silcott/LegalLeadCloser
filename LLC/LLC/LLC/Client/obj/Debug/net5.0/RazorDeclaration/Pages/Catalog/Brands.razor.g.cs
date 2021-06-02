@@ -34,13 +34,6 @@ using Microsoft.AspNetCore.Authorization;
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.Authorization;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 6 "C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
@@ -279,6 +272,20 @@ using LLC.Application.Features.Brands.Queries.GetAll;
 #line hidden
 #nullable disable
 #nullable restore
+#line 5 "C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Client\Pages\Catalog\Brands.razor"
+using Microsoft.AspNetCore.Components.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Client\Pages\Catalog\Brands.razor"
+using System.Security.Claims;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 48 "C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Client\_Imports.razor"
 [Authorize]
 
@@ -293,6 +300,20 @@ using LLC.Application.Features.Brands.Queries.GetAll;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 97 "C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Client\Pages\Catalog\Brands.razor"
+       
+    private ClaimsPrincipal AuthenticationStateProviderUser { get; set; }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        AuthenticationStateProviderUser = await _stateProvider.GetAuthenticationStateProviderUserAsync();
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthenticationStateProvider AuthenticationStateProvider { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private Microsoft.Extensions.Localization.IStringLocalizer<Brands> localizer { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IDocumentManager _documentManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime _jsRuntime { get; set; }

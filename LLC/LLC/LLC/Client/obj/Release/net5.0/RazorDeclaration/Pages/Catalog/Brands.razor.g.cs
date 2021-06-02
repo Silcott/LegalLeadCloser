@@ -285,7 +285,7 @@ using LLC.Application.Features.Brands.Queries.GetAll;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/catalog/brands")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/catalog/clients")]
     public partial class Brands : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
