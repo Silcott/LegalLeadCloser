@@ -93,7 +93,8 @@ namespace LLC.Client.Pages.Catalog
                         CourtDate = brand.CourtDate,
                         CourtLocation = brand.CourtLocation,
                         Phone = brand.Phone,
-                        Email = brand.Email
+                        Email = brand.Email,
+                        Birthdate = brand.Birthdate
                     });
                 }
             }

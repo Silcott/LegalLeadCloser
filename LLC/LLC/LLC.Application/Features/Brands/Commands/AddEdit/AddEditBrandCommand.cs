@@ -30,6 +30,9 @@ namespace LLC.Application.Features.Brands.Commands.AddEdit
         public string Phone { get; set; }
         [EmailAddress]
         public string Email { get; set; }
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
+        [DataType(DataType.Date, ErrorMessage = "date is not a corret format")]
+        public DateTime Birthdate { get; set; }
 
 
 
@@ -62,12 +65,15 @@ namespace LLC.Application.Features.Brands.Commands.AddEdit
                 var brand = await _unitOfWork.Repository<Brand>().GetByIdAsync(command.Id);
                 if (brand != null)
                 {
+                    //TODO fix dates - birth and court dates
                     brand.FirstName = command.FirstName ?? brand.FirstName;
                     brand.LastName = command.LastName ?? brand.LastName;
                     brand.CourtDate = brand.CourtDate;
                     brand.CourtLocation = command.CourtLocation ?? brand.CourtLocation;
                     brand.Phone = command.Phone ?? brand.Phone;
                     brand.Email = command.Email ?? brand.Email;
+                    brand.Birthdate = brand.Birthdate;
+
 
                     //brand.LastName = (command.Tax == 0) ? brand.Tax : command.Tax;
                     await _unitOfWork.Repository<Brand>().UpdateAsync(brand);

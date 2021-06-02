@@ -20,6 +20,7 @@
         <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.CourtLocation)">@localizer["Court Location"]</MudTableSortLabel></MudTh>
         <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.Phone)">@localizer["Phone"]</MudTableSortLabel></MudTh>
         <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.Email)">@localizer["Email"]</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.Birthdate)">@localizer["Birthdate"]</MudTableSortLabel></MudTh>
 
         <MudTh Style="text-align:right">@localizer["Actions"]</MudTh>
     </HeaderContent>
@@ -30,9 +31,11 @@
         </MudTd>
         <MudTd DataLabel="Last Name">@context.LastName</MudTd>
         <MudTd DataLabel="Court Date">@context.CourtDate</MudTd>
-        <MudTd DataLabel="Court Location">@context.CourtDate</MudTd>
+        <MudTd DataLabel="Court Location">@context.CourtLocation</MudTd>
         <MudTd DataLabel="Phone">@context.Phone</MudTd>
         <MudTd DataLabel="Email">@context.Email</MudTd>
+        <MudTd DataLabel="Email">@context.Birthdate</MudTd>
+
 
         <MudTd DataLabel="Actions" Style="text-align:right">
             <MudMenu Label="@localizer["Actions"]" Variant="Variant.Filled" DisableElevation="true" EndIcon="@Icons.Filled.KeyboardArrowDown" IconColor="Color.Secondary">

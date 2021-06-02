@@ -46,6 +46,9 @@
                 <MudItem xs="12" md="6">
                     <MudTextField For="@(() => AddEditBrandModel.Email)" @bind-Value="AddEditBrandModel.Email" Label="@localizer["Court Email"]" />
                 </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudTextField For="@(() => AddEditBrandModel.Birthdate)" @bind-Value="AddEditBrandModel.Birthdate" Label="@localizer["Birthdate"]" />
+                </MudItem>
             </MudGrid>
         </DialogContent>
         <DialogActions>
