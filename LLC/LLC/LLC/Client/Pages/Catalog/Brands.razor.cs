@@ -17,6 +17,7 @@ namespace LLC.Client.Pages.Catalog
         public List<GetAllBrandsResponse> BrandList = new();
         private GetAllBrandsResponse brand = new();
         private string searchString = "";
+        private string CurrentUserId { get; set; }
         private bool _dense = true;
         private bool _striped = true;
         private bool _bordered = false;
@@ -28,6 +29,13 @@ namespace LLC.Client.Pages.Catalog
             if (hubConnection.State == HubConnectionState.Disconnected)
             {
                 await hubConnection.StartAsync();
+            }
+            var state = await _stateProvider.GetAuthenticationStateAsync();
+            var user = state.User;
+            if (user == null) return;
+            if (user.Identity?.IsAuthenticated == true)
+            {
+                CurrentUserId = user.GetUserId();
             }
         }
 
@@ -76,6 +84,8 @@ namespace LLC.Client.Pages.Catalog
                 }
             }
         }
+        //private readonly Microsoft.AspNetCore.Identity.UserManager<Application.Models.Identity.LLCUser> _user;
+        private readonly Application.Interfaces.Services.ICurrentUserService _currentUser;
 
         private async Task InvokeModal(int id = 0)
         {
@@ -88,6 +98,7 @@ namespace LLC.Client.Pages.Catalog
                     parameters.Add(nameof(AddEditBrandModal.AddEditBrandModel), new AddEditBrandCommand
                     {
                         Id = brand.Id,
+                        UserId = Int32.Parse(_currentUser.UserId),
                         FirstName = brand.FirstName,
                         LastName = brand.LastName,
                         CourtDate = brand.CourtDate,

@@ -14,7 +14,10 @@ namespace LLC.Application.Features.Brands.Commands.AddEdit
 {
     public partial class AddEditBrandCommand : IRequest<Result<int>>
     {
+        //TODO set realtionship with user and client ID
         public int Id { get; set; }
+
+        public int UserId { get; set; }
         [Required]
         public string FirstName { get; set; }
         [Required]
@@ -73,6 +76,7 @@ namespace LLC.Application.Features.Brands.Commands.AddEdit
                     brand.Phone = command.Phone ?? brand.Phone;
                     brand.Email = command.Email ?? brand.Email;
                     brand.Birthdate = brand.Birthdate;
+                    brand.CreatedBy = command.Id.ToString();
 
 
                     //brand.LastName = (command.Tax == 0) ? brand.Tax : command.Tax;
