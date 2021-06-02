@@ -2,7 +2,7 @@
 @using LLC.Application.Features.Brands.Queries.GetAll
 @inject Microsoft.Extensions.Localization.IStringLocalizer<Brands> localizer
 
-<HeroTitle Title="@localizer["Brands"]" Description="@localizer["Manage Brands."]" />
+<HeroTitle Title="@localizer["Brands"]" Description="@localizer["Manage Clients."]" />
 <MudTable Hover="true" Elevation="25" Items="BrandList" Dense="@_dense" Bordered="@_bordered" Striped="@_striped" Filter="new Func<GetAllBrandsResponse, bool>(Search)" @bind-brand="brand">
     <ToolBarContent>
         <div class="justify-center mud-text-align-center">
@@ -10,7 +10,7 @@
             <MudButton Variant="Variant.Filled" OnClick="GetBrandsAsync" Color="Color.Secondary">@localizer["Reload"]</MudButton>
         </div>
         <MudToolBarSpacer />
-        <MudTextField @bind-Value="searchString" Immediate="true" Placeholder="@localizer["Search for Brands"]" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0 mb-3"></MudTextField>
+        <MudTextField @bind-Value="searchString" Immediate="true" Placeholder="@localizer["Search for Clients"]" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0 mb-3"></MudTextField>
     </ToolBarContent>
     <HeaderContent>
         <MudTh><MudTableSortLabel SortBy="new Func<GetAllBrandsResponse, object>(x => x.Id)">@localizer["Id"]</MudTableSortLabel></MudTh>
