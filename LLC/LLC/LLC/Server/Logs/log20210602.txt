@@ -29,3 +29,220 @@
 2021-06-02 07:47:26.336 -04:00 [INF] Application started. Press Ctrl+C to shut down.
 2021-06-02 07:47:26.337 -04:00 [INF] Hosting environment: Development
 2021-06-02 07:47:26.337 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-06-02 09:14:51.287 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-02 09:14:51.329 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-02 09:14:51.331 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-02 09:14:51.332 -04:00 [INF] Hosting environment: Development
+2021-06-02 09:14:51.333 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-06-02 09:15:00.726 -04:00 [ERR] Failed executing DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Birthdate], [b].[CourtDate], [b].[CourtLocation], [b].[CreatedBy], [b].[CreatedOn], [b].[Email], [b].[FirstName], [b].[LastModifiedBy], [b].[LastModifiedOn], [b].[LastName], [b].[Phone]
+FROM [Brands] AS [b]
+2021-06-02 09:15:00.780 -04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'LLC.Infrastructure.Contexts.BlazorHeroContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Birthdate'.
+Invalid column name 'CourtDate'.
+Invalid column name 'CourtLocation'.
+Invalid column name 'Email'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+Invalid column name 'Phone'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:bada3597-5a25-44f5-9c67-e65b0183dd19
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Birthdate'.
+Invalid column name 'CourtDate'.
+Invalid column name 'CourtLocation'.
+Invalid column name 'Email'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+Invalid column name 'Phone'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:bada3597-5a25-44f5-9c67-e65b0183dd19
+Error Number:207,State:1,Class:16
+2021-06-02 09:16:31.562 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-02 09:16:31.596 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-02 09:16:31.598 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-02 09:16:31.599 -04:00 [INF] Hosting environment: Development
+2021-06-02 09:16:31.599 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-06-02 09:17:34.065 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-02 09:17:34.102 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-02 09:17:34.104 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-02 09:17:34.105 -04:00 [INF] Hosting environment: Development
+2021-06-02 09:17:34.106 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-06-02 09:17:54.512 -04:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Birthdate], [b].[CourtDate], [b].[CourtLocation], [b].[CreatedBy], [b].[CreatedOn], [b].[Email], [b].[FirstName], [b].[LastModifiedBy], [b].[LastModifiedOn], [b].[LastName], [b].[Phone]
+FROM [Brands] AS [b]
+2021-06-02 09:17:54.546 -04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'LLC.Infrastructure.Contexts.BlazorHeroContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Birthdate'.
+Invalid column name 'CourtDate'.
+Invalid column name 'CourtLocation'.
+Invalid column name 'Email'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+Invalid column name 'Phone'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:2404daf9-cf46-46f8-b7de-684bf748b926
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Birthdate'.
+Invalid column name 'CourtDate'.
+Invalid column name 'CourtLocation'.
+Invalid column name 'Email'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+Invalid column name 'Phone'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:2404daf9-cf46-46f8-b7de-684bf748b926
+Error Number:207,State:1,Class:16
+2021-06-02 09:19:42.284 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-02 09:19:42.321 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-02 09:19:42.323 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-02 09:19:42.324 -04:00 [INF] Hosting environment: Development
+2021-06-02 09:19:42.324 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-06-02 09:19:51.106 -04:00 [ERR] Failed executing DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Birthdate], [b].[CourtDate], [b].[CourtLocation], [b].[CreatedBy], [b].[CreatedOn], [b].[Email], [b].[FirstName], [b].[LastModifiedBy], [b].[LastModifiedOn], [b].[LastName], [b].[Phone]
+FROM [Brands] AS [b]
+2021-06-02 09:19:51.143 -04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'LLC.Infrastructure.Contexts.BlazorHeroContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Birthdate'.
+Invalid column name 'CourtDate'.
+Invalid column name 'CourtLocation'.
+Invalid column name 'Email'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+Invalid column name 'Phone'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:9569b069-e280-46dd-b891-e5efa418f70e
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Birthdate'.
+Invalid column name 'CourtDate'.
+Invalid column name 'CourtLocation'.
+Invalid column name 'Email'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+Invalid column name 'Phone'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:9569b069-e280-46dd-b891-e5efa418f70e
+Error Number:207,State:1,Class:16
+2021-06-02 09:24:58.538 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-02 09:24:58.575 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-02 09:24:58.577 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-02 09:24:58.578 -04:00 [INF] Hosting environment: Development
+2021-06-02 09:24:58.579 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-06-02 09:25:15.337 -04:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Birthdate], [b].[CourtDate], [b].[CourtLocation], [b].[CreatedBy], [b].[CreatedOn], [b].[Email], [b].[FirstName], [b].[LastModifiedBy], [b].[LastModifiedOn], [b].[LastName], [b].[Phone]
+FROM [Brands] AS [b]
+2021-06-02 09:25:15.372 -04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'LLC.Infrastructure.Contexts.BlazorHeroContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Birthdate'.
+Invalid column name 'CourtDate'.
+Invalid column name 'CourtLocation'.
+Invalid column name 'Email'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+Invalid column name 'Phone'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:dd04bd6c-dc2d-42d6-ace7-ed0f154c6553
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Birthdate'.
+Invalid column name 'CourtDate'.
+Invalid column name 'CourtLocation'.
+Invalid column name 'Email'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+Invalid column name 'Phone'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:dd04bd6c-dc2d-42d6-ace7-ed0f154c6553
+Error Number:207,State:1,Class:16

@@ -44,7 +44,7 @@ namespace LLC.Application.Features.Products.Queries.GetAllPaged
                 Description = e.Description,
                 Rate = e.Rate,
                 Barcode = e.Barcode,
-                Brand = e.Brand.Name,
+                Brand = e.Brand.FirstName,
                 BrandId = e.BrandId
             };
             var productFilterSpec = new ProductFilterSpecification(request.SearchString);

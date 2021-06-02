@@ -37,7 +37,7 @@
                     <MudSelect T="int" Label="@localizer["Brand"]" For="@(() => AddEditProductModel.BrandId)" @bind-Value="AddEditProductModel.BrandId" Variant="Variant.Filled">
                         @foreach (var brand in Brands)
                         {
-                            <MudSelectItem T="int" Value="@(brand.Id)">@brand.Name</MudSelectItem>
+                            <MudSelectItem T="int" Value="@(brand.Id)">@brand.FirstName</MudSelectItem>
                         }
                     </MudSelect>
                 </MudItem>

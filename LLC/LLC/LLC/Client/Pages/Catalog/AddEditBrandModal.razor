@@ -8,14 +8,14 @@
                 {
                     <MudText Typo="Typo.h6">
                         <MudIcon Icon="@Icons.Material.Filled.Add" Class="mr-3 mb-n1" />
-                        @localizer["Add Brand"]
+                        @localizer["Add Client"]
                     </MudText>
                 }
                 else
                 {
                     <MudText Typo="Typo.h6">
                         <MudIcon Icon="@Icons.Material.Filled.Update" Class="mr-3 mb-n1" />
-                        @localizer["Update Brand"]
+                        @localizer["Update Client"]
                     </MudText>
                 }
             }
@@ -29,13 +29,22 @@
                     </MudItem>
                 }
                 <MudItem xs="12" md="6">
-                    <MudTextField T="string" For="@(() => AddEditBrandModel.Name)" @bind-Value="AddEditBrandModel.Name" Label="@localizer["Name"]" />
+                    <MudTextField T="string" For="@(() => AddEditBrandModel.FirstName)" @bind-Value="AddEditBrandModel.FirstName" Label="@localizer["First Name"]" />
                 </MudItem>
                 <MudItem xs="12" md="6">
-                    <MudTextField For="@(() => AddEditBrandModel.Description)" @bind-Value="AddEditBrandModel.Description" Label="@localizer["Description"]" />
+                    <MudTextField For="@(() => AddEditBrandModel.LastName)" @bind-Value="AddEditBrandModel.LastName" Label="@localizer["Last Name"]" />
                 </MudItem>
                 <MudItem xs="12" md="6">
-                    <MudTextField For="@(() => AddEditBrandModel.Tax)" @bind-Value="AddEditBrandModel.Tax" Label="@localizer["Tax"]" />
+                    <MudTextField For="@(() => AddEditBrandModel.CourtDate)" @bind-Value="AddEditBrandModel.CourtDate" Label="@localizer["Court Date"]" />
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudTextField For="@(() => AddEditBrandModel.CourtLocation)" @bind-Value="AddEditBrandModel.CourtLocation" Label="@localizer["Court Location"]" />
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudTextField For="@(() => AddEditBrandModel.Phone)" @bind-Value="AddEditBrandModel.Phone" Label="@localizer["Phone"]" />
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudTextField For="@(() => AddEditBrandModel.Email)" @bind-Value="AddEditBrandModel.Email" Label="@localizer["Court Email"]" />
                 </MudItem>
             </MudGrid>
         </DialogContent>

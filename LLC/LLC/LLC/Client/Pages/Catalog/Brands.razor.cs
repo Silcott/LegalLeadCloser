@@ -88,9 +88,12 @@ namespace LLC.Client.Pages.Catalog
                     parameters.Add(nameof(AddEditBrandModal.AddEditBrandModel), new AddEditBrandCommand
                     {
                         Id = brand.Id,
-                        Name = brand.Name,
-                        Description = brand.Description,
-                        Tax = brand.Tax
+                        FirstName = brand.FirstName,
+                        LastName = brand.LastName,
+                        CourtDate = brand.CourtDate,
+                        CourtLocation = brand.CourtLocation,
+                        Phone = brand.Phone,
+                        Email = brand.Email
                     });
                 }
             }
@@ -111,8 +114,9 @@ namespace LLC.Client.Pages.Catalog
 
         private bool Search(GetAllBrandsResponse brand)
         {
+            //TODO change firstname to last if needed dur to search narrowing
             if (string.IsNullOrWhiteSpace(searchString)) return true;
-            if (brand.Name?.Contains(searchString, StringComparison.OrdinalIgnoreCase) == true)
+            if (brand.FirstName?.Contains(searchString, StringComparison.OrdinalIgnoreCase) == true)
             {
                 return true;
             }

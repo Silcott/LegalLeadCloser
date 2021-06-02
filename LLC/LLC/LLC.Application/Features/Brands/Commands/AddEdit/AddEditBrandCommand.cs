@@ -8,6 +8,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Localization;
 using LLC.Shared.Constants.Application;
+using System;
 
 namespace LLC.Application.Features.Brands.Commands.AddEdit
 {
@@ -15,11 +16,23 @@ namespace LLC.Application.Features.Brands.Commands.AddEdit
     {
         public int Id { get; set; }
         [Required]
-        public string Name { get; set; }
+        public string FirstName { get; set; }
         [Required]
-        public string Description { get; set; }
+        public string LastName { get; set; }
+
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
+        [DataType(DataType.Date, ErrorMessage = "date is not a corret format")]
         [Required]
-        public decimal Tax { get; set; }
+        public DateTime CourtDate { get; set; }
+
+        public string CourtLocation { get; set; }
+        [Phone]
+        public string Phone { get; set; }
+        [EmailAddress]
+        public string Email { get; set; }
+
+
+
     }
 
     public class AddEditBrandCommandHandler : IRequestHandler<AddEditBrandCommand, Result<int>>
@@ -42,23 +55,28 @@ namespace LLC.Application.Features.Brands.Commands.AddEdit
                 var brand = _mapper.Map<Brand>(command);
                 await _unitOfWork.Repository<Brand>().AddAsync(brand);
                 await _unitOfWork.ComitAndRemoveCache(cancellationToken, ApplicationConstants.Cache.GetAllBrandsCacheKey);
-                return await Result<int>.SuccessAsync(brand.Id, _localizer["Brand Saved"]);
+                return await Result<int>.SuccessAsync(brand.Id, _localizer["Client Saved"]);
             }
             else
             {
                 var brand = await _unitOfWork.Repository<Brand>().GetByIdAsync(command.Id);
                 if (brand != null)
                 {
-                    brand.Name = command.Name ?? brand.Name;
-                    brand.Tax = (command.Tax == 0) ? brand.Tax : command.Tax;
-                    brand.Description = command.Description ?? brand.Description;
+                    brand.FirstName = command.FirstName ?? brand.FirstName;
+                    brand.LastName = command.LastName ?? brand.LastName;
+                    brand.CourtDate = brand.CourtDate;
+                    brand.CourtLocation = command.CourtLocation ?? brand.CourtLocation;
+                    brand.Phone = command.Phone ?? brand.Phone;
+                    brand.Email = command.Email ?? brand.Email;
+
+                    //brand.LastName = (command.Tax == 0) ? brand.Tax : command.Tax;
                     await _unitOfWork.Repository<Brand>().UpdateAsync(brand);
                     await _unitOfWork.ComitAndRemoveCache(cancellationToken, ApplicationConstants.Cache.GetAllBrandsCacheKey);
-                    return await Result<int>.SuccessAsync(brand.Id, _localizer["Brand Updated"]);
+                    return await Result<int>.SuccessAsync(brand.Id, _localizer["CLient Updated"]);
                 }
                 else
                 {
-                    return await Result<int>.FailAsync(_localizer["Brand Not Found!"]);
+                    return await Result<int>.FailAsync(_localizer["Client Not Found!"]);
                 }
             }
         }

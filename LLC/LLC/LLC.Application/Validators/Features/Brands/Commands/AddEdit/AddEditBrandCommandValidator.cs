@@ -8,12 +8,17 @@ namespace LLC.Application.Validators.Features.Brands.Commands.AddEdit
     {
         public AddEditBrandCommandValidator(IStringLocalizer<AddEditBrandCommandValidator> localizer)
         {
-            RuleFor(request => request.Name)
-                .Must(x => !string.IsNullOrWhiteSpace(x)).WithMessage(x => localizer["Name is required!"]);
-            RuleFor(request => request.Description)
-                .Must(x => !string.IsNullOrWhiteSpace(x)).WithMessage(x => localizer["Description is required!"]);
-            RuleFor(request => request.Tax)
-                .GreaterThan(0).WithMessage(x => localizer["Tax must be greater than 0"]);
+            RuleFor(request => request.FirstName)
+                .Must(x => !string.IsNullOrWhiteSpace(x)).WithMessage(x => localizer["First Name is required!"]);
+            RuleFor(request => request.LastName)
+                .Must(x => !string.IsNullOrWhiteSpace(x)).WithMessage(x => localizer["Last Name is required!"]);
+            RuleFor(request => request.Phone)
+            .Must(x => !string.IsNullOrWhiteSpace(x)).WithMessage(x => localizer["Phone is required!"]);
+            RuleFor(request => request.Email)
+            .Must(x => !string.IsNullOrWhiteSpace(x)).WithMessage(x => localizer["EMail is required!"]);
+
+            //RuleFor(request => request.Tax)
+            //    .GreaterThan(0).WithMessage(x => localizer["Tax must be greater than 0"]);
         }
     }
 }

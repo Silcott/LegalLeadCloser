@@ -59,7 +59,7 @@
         }
         @if (_authorizationService.AuthorizeAsync(AuthenticationStateProviderUser, Permissions.Brands.View).Result.Succeeded)
         {
-            <MudNavLink Href="/catalog/brands" Icon="@Icons.Material.Outlined.CallToAction">
+            <MudNavLink Href="/catalog/clients" Icon="@Icons.Material.Outlined.CallToAction">
                 @localizer["Clients"]
             </MudNavLink>
             <MudNavLink Href="/document-store" Icon="@Icons.Material.Outlined.AttachFile">

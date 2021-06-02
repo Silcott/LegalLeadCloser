@@ -1,11 +1,17 @@
 ﻿using LLC.Domain.Contracts;
+using System;
 
 namespace LLC.Domain.Entities.Catalog
 {
     public class Brand : AuditableEntity
     {
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public decimal Tax { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public DateTime CourtDate { get; set; }
+        public string CourtLocation { get; set; }
+        public string Phone { get; set; }
+        public string Email { get; set; }
+        public DateTime Birthdate { get; set; }
+
     }
 }
