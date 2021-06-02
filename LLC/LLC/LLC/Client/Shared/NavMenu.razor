@@ -6,24 +6,15 @@
 <MudDivider Class="mb-4" />
 <MudNavMenu>
     <MudNavLink Href="/" Match="NavLinkMatch.All" Icon="@Icons.Material.Outlined.Home">@localizer["Home"]</MudNavLink>
-    <MudNavLink Href="/jobs" Icon="@Icons.Material.Outlined.Work">
-        @localizer["Hangfire"]
-    </MudNavLink>
-    <MudNavLink Href="https://codewithmukesh.com/blog/blazor-hero-quick-start-guide/" Target="_blank" Icon="@Icons.Material.Outlined.ReadMore">
+    <MudNavLink Href="https://github.com/Silcott/LegalLeadCloser" Target="_blank" Icon="@Icons.Material.Outlined.ReadMore">
         @localizer["Quick Start Guide"]
     </MudNavLink>
-    <MudNavLink Href="/swagger/index.html" Target="_blank" Icon="@Icons.Material.Outlined.LiveHelp">
-        @localizer["Swagger"]
-    </MudNavLink>
     <MudListSubheader Class="mt-2 mb-n2">@localizer["Personal"]</MudListSubheader>
-    <MudNavLink Href="/dashboard" Icon="@Icons.Material.Outlined.Dashboard">
-        @localizer["Dashboard"]
-    </MudNavLink>
     <MudNavLink Href="/account" Icon="@Icons.Material.Outlined.SupervisorAccount">
         @localizer["Account"]
     </MudNavLink>
     <MudNavLink Href="/document-store" Icon="@Icons.Material.Outlined.AttachFile">
-        @localizer["Document Store"]
+        @localizer["Documents"]
     </MudNavLink>
     <MudNavLink Href="/audit-trails" Icon="@Icons.Material.Outlined.Security">
         @localizer["Audit Trails"]
@@ -38,6 +29,16 @@
             <MudNavLink Href="/identity/users" Icon="@Icons.Material.Outlined.Person">
                 @localizer["Users"]
             </MudNavLink>
+            <MudNavLink Href="/dashboard" Icon="@Icons.Material.Outlined.Dashboard">
+                @localizer["Dashboard"]
+            </MudNavLink>
+            <MudNavLink Href="/jobs" Icon="@Icons.Material.Outlined.Work">
+                @localizer["Hangfire"]
+            </MudNavLink>
+            <MudNavLink Href="/swagger/index.html" Target="_blank" Icon="@Icons.Material.Outlined.LiveHelp">
+                @localizer["Swagger"]
+            </MudNavLink>
+
         }
         @if (_authorizationService.AuthorizeAsync(AuthenticationStateProviderUser, Permissions.Roles.View).Result.Succeeded)
         {
@@ -51,17 +52,17 @@
     </MudNavLink>
     @if (_authorizationService.AuthorizeAsync(AuthenticationStateProviderUser, Permissions.Products.View).Result.Succeeded || _authorizationService.AuthorizeAsync(AuthenticationStateProviderUser, Permissions.Brands.View).Result.Succeeded)
     {
-        <MudListSubheader Class="mt-2 mb-n2">@localizer["Catalog Management"]</MudListSubheader>
+        <MudListSubheader Class="mt-2 mb-n2">@localizer["Client Management"]</MudListSubheader>
         @if (_authorizationService.AuthorizeAsync(AuthenticationStateProviderUser, Permissions.Products.View).Result.Succeeded)
         {
             <MudNavLink Href="/catalog/products" Icon="@Icons.Material.Outlined.CallToAction">
-                @localizer["Products"]
+                @localizer["Closer Script"]
             </MudNavLink>
         }
         @if (_authorizationService.AuthorizeAsync(AuthenticationStateProviderUser, Permissions.Brands.View).Result.Succeeded)
         {
             <MudNavLink Href="/catalog/brands" Icon="@Icons.Material.Outlined.CallToAction">
-                @localizer["Brands"]
+                @localizer["Clients"]
             </MudNavLink>
         }
     }

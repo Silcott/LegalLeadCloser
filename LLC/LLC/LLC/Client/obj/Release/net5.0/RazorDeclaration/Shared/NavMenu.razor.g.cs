@@ -293,7 +293,7 @@ using Microsoft.AspNetCore.Components.Authorization;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 70 "C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Client\Shared\NavMenu.razor"
+#line 71 "C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Client\Shared\NavMenu.razor"
        
     private ClaimsPrincipal AuthenticationStateProviderUser { get; set; }
 

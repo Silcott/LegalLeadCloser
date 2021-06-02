@@ -9,3 +9,13 @@
 2021-06-02 07:38:23.074 -04:00 [INF] Hosting environment: Development
 2021-06-02 07:38:23.075 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
 2021-06-02 07:38:46.320 -04:00 [INF] Application is shutting down...
+2021-06-02 07:40:05.366 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-02 07:40:05.404 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-02 07:40:05.406 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-02 07:40:05.407 -04:00 [INF] Hosting environment: Development
+2021-06-02 07:40:05.408 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
+2021-06-02 07:44:21.566 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-02 07:44:21.607 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-02 07:44:21.610 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-02 07:44:21.610 -04:00 [INF] Hosting environment: Development
+2021-06-02 07:44:21.611 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server
