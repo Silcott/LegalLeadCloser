@@ -298,13 +298,6 @@ using LLC.Shared.Constants.Role;
  
                             MudMessageBox mbox { get; set; }
                             string state = "Message box hasn't been opened yet";
-
-                            private async void OnButtonClickedDel()
-                            {
-                                bool? result = await mbox.Show();
-                                state = result == null ? "Cancelled" : "Deleted!";
-                                StateHasChanged();
-                            }
                         
 
 #line default

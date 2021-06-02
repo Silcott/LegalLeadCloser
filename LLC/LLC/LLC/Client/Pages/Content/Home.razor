@@ -4,6 +4,7 @@
 <MudContainer>
     <MudGrid>
 
+
         <MudItem xs="12" sm="12" md="12">
             <MudText Align="Align.Center" Typo="Typo.h2">@_localizer["Title"]</MudText>
             <MudText Align="Align.Center" Typo="Typo.h5" Class="smaller">@_localizer["Description"]</MudText>
@@ -15,12 +16,12 @@
         </MudItem>
         <MudItem xs="12" sm="12" md="12">
             <div class="d-flex justify-center mt-4">
-                <MudIcon Icon="@CustomIcons.BlazorHero" Color="Color.Primary" Size="Size.Large" ViewBox="80 0 500 500" Style="width: 300px; height: 300px;" />
+                <MudIcon Icon="@CustomIcons.LLCicon" Color="Color.Primary" Size="Size.Large" ViewBox="80 0 500 500" Style="width: 300px; height: 300px;" />
             </div>
         </MudItem> <MudItem xs="12" sm="12" md="12">
             <div class="pa-4 justify-center my-4 mud-text-align-center">
-                <MudButton Variant="Variant.Filled" Color="Color.Primary" Link="https://codewithmukesh.com/blazorhero" Target="_blank">@_localizer["Project Page"]</MudButton>
-                <MudButton Variant="Variant.Filled" Color="Color.Secondary" Link="https://www.buymeacoffee.com/codewithmukesh" Target="_blank">@_localizer["Support Me"]</MudButton>
+                <MudButton Variant="Variant.Filled" Color="Color.Primary" Link="https://github.com/Silcott/LegalLeadCloser" Target="_blank">@_localizer["Project Page"]</MudButton>
+                @*<MudButton Variant="Variant.Filled" Color="Color.Secondary" Link="https://www.buymeacoffee.com/jbsilcott" Target="_blank">@_localizer["Support Me"]</MudButton>*@
             </div>
         </MudItem>
 
@@ -28,15 +29,15 @@
             <MudExpansionPanels>
                 <MudExpansionPanel Text="@_localizer["Getting Started"]" MaxHeight="150">
                     @_localizer["Increase you are stuck anywhere or have any queries regarding this implementation, I have compiled a Quick Start Guide for you reference."]
-                    <MudButton Variant="Variant.Text" DisableElevation="true" Color="Color.Secondary" Link="https://codewithmukesh.com/blazorhero" Target="_blank">@_localizer["Read The Guide"]</MudButton>
+                    <MudButton Variant="Variant.Text" DisableElevation="true" Color="Color.Secondary" Link="https://github.com/Silcott/LegalLeadCloser" Target="_blank">@_localizer["Read The Guide"]</MudButton>
                 </MudExpansionPanel>
                 <MudExpansionPanel Text="@_localizer["Important Links"]" MaxHeight="500">
                     <MudList Clickable="true">
-                        <MudListItem Text="@_localizer["Give Ascent Legal Feedback:"]" Href="https://github.com/blazorhero/CleanArchitecture" />
-                        <MudListItem Text="@_localizer["Quick Start Guide"]" Href="https://codewithmukesh.com/blazorhero" />
+                        <MudListItem Text="@_localizer["Give Ascent Legal Feedback:"]" Href="https://github.com/Silcott/LegalLeadCloser" />
+                        <MudListItem Text="@_localizer["Quick Start Guide"]" Href="https://github.com/Silcott/LegalLeadCloser" />
                     </MudList>
                 </MudExpansionPanel>
-                <MudExpansionPanel Text="@_localizer["Learning Resources"]" MaxHeight="1000">
+                @*<MudExpansionPanel Text="@_localizer["Learning Resources"]" MaxHeight="1000">
                     @_localizer["Here are few articles that should help you get started with Blazor."]
                     <MudList Clickable="true">
                         <MudListItem Text="@_localizer["Blazor For Beginners – Getting Started With Blazor"]" Href="https://codewithmukesh.com/blog/getting-started-with-blazor/" />
@@ -47,7 +48,7 @@
                         <MudListItem Text="@_localizer["Implementing Blazor CRUD Using Mudblazor Component Library In .NET 5"]" Href="https://codewithmukesh.com/blog/blazor-crud-using-mudblazor/" />
                         <MudListItem Text="@_localizer["Building A Chat Application With Blazor, Identity, And SignalR"]" Href="https://codewithmukesh.com/blog/realtime-chat-application-with-blazor/" />
                     </MudList>
-                </MudExpansionPanel>
+                </MudExpansionPanel>*@
             </MudExpansionPanels>
         </MudItem>
         <div style="margin:50px"></div>
