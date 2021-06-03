@@ -1,0 +1,22 @@
+﻿<SatelliteAssembly>
+  <Assembly Name="obj\Debug\net5.0\de\LLC.Client.resources.dll" Culture="de" DestinationSubDirectory="de\" />
+  <Assembly Name="obj\Debug\net5.0\en\LLC.Client.resources.dll" Culture="en" DestinationSubDirectory="en\" />
+  <Assembly Name="obj\Debug\net5.0\es\LLC.Client.resources.dll" Culture="es" DestinationSubDirectory="es\" />
+  <Assembly Name="obj\Debug\net5.0\id\LLC.Client.resources.dll" Culture="id" DestinationSubDirectory="id\" />
+  <Assembly Name="obj\Debug\net5.0\it\LLC.Client.resources.dll" Culture="it" DestinationSubDirectory="it\" />
+  <Assembly Name="obj\Debug\net5.0\km\LLC.Client.resources.dll" Culture="km" DestinationSubDirectory="km\" />
+  <Assembly Name="obj\Debug\net5.0\ru\LLC.Client.resources.dll" Culture="ru" DestinationSubDirectory="ru\" />
+  <Assembly Name="obj\Debug\net5.0\sv\LLC.Client.resources.dll" Culture="sv" DestinationSubDirectory="sv\" />
+  <Assembly Name="obj\Debug\net5.0\fr\LLC.Client.resources.dll" Culture="fr" DestinationSubDirectory="fr\" />
+  <Assembly Name="C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC.Client.Infrastructure\bin\Debug\net5.0\en\LLC.Client.Infrastructure.resources.dll" Culture="en" DestinationSubDirectory="en\" />
+  <Assembly Name="C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC.Application\bin\Debug\net5.0\en\LLC.Application.resources.dll" Culture="en" DestinationSubDirectory="en\" />
+  <Assembly Name="C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC.Client.Infrastructure\bin\Debug\net5.0\ru\LLC.Client.Infrastructure.resources.dll" Culture="ru" DestinationSubDirectory="ru\" />
+  <Assembly Name="C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC.Application\bin\Debug\net5.0\ru\LLC.Application.resources.dll" Culture="ru" DestinationSubDirectory="ru\" />
+  <Assembly Name="C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC.Application\bin\Debug\net5.0\de\LLC.Application.resources.dll" Culture="de" DestinationSubDirectory="de\" />
+  <Assembly Name="C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC.Application\bin\Debug\net5.0\es\LLC.Application.resources.dll" Culture="es" DestinationSubDirectory="es\" />
+  <Assembly Name="C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC.Application\bin\Debug\net5.0\fr\LLC.Application.resources.dll" Culture="fr" DestinationSubDirectory="fr\" />
+  <Assembly Name="C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC.Application\bin\Debug\net5.0\id\LLC.Application.resources.dll" Culture="id" DestinationSubDirectory="id\" />
+  <Assembly Name="C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC.Application\bin\Debug\net5.0\it\LLC.Application.resources.dll" Culture="it" DestinationSubDirectory="it\" />
+  <Assembly Name="C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC.Application\bin\Debug\net5.0\km\LLC.Application.resources.dll" Culture="km" DestinationSubDirectory="km\" />
+  <Assembly Name="C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC.Application\bin\Debug\net5.0\sv\LLC.Application.resources.dll" Culture="sv" DestinationSubDirectory="sv\" />
+</SatelliteAssembly>
