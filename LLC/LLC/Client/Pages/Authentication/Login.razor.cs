@@ -65,13 +65,19 @@ namespace LLC.Client.Pages.Authentication
 
         private void FillAdministratorCredentials()
         {
-            tokenModel.Email = "silcott.jb@outlook.com";
+            tokenModel.Email = "admin@gmail.com";
             tokenModel.Password = "123Pa$$word!";
         }
 
         private void FillBasicUserCredentials()
         {
-            tokenModel.Email = "joesanchez@gmail.com";
+            tokenModel.Email = "lawyer@gmail.com";
+            tokenModel.Password = "123Pa$$word!";
+        }
+
+        private void FillClientCredentials()
+        {
+            tokenModel.Email = "client@gmail.com";
             tokenModel.Password = "123Pa$$word!";
         }
     }

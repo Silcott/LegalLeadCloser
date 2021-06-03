@@ -1,7 +1,7 @@
-﻿@page "/catalog/products"
+﻿@page "/catalog/scripts"
 @using LLC.Application.Features.Products.Queries.GetAllPaged;
 @inject Microsoft.Extensions.Localization.IStringLocalizer<Products> localizer
-<HeroTitle Title="@localizer["Products"]" Description="@localizer["Manage Products."]" />
+<HeroTitle Title="@localizer["Scripts"]" Description="@localizer["Manage Scripts."]" />
 <MudTable Elevation="25" ServerData="@(new Func<TableState, Task<TableData<GetAllPagedProductsResponse>>>(ServerReload))" Hover="true" Dense="@_dense" Bordered="@_bordered" Striped="@_striped" @ref="table">
     <ToolBarContent>
 

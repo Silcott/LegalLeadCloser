@@ -31,7 +31,8 @@ namespace LLC.Infrastructure
         {
             AddCustomerPermissionClaims();
             AddAdministrator();
-            AddBasicUser();
+            AddLawyerUser();
+            AddClientUser();
             _db.SaveChanges();
         }
 
@@ -63,8 +64,8 @@ namespace LLC.Infrastructure
                 var superUser = new LLCUser
                 {
                     FirstName = "James",
-                    LastName = "Silcott",
-                    Email = "silcott.jb@outlook.com",
+                    LastName = "Admin",
+                    Email = "admin@gmail.com",
                     UserName = "Admin",
                     EmailConfirmed = true,
                     PhoneNumberConfirmed = true,
@@ -88,7 +89,7 @@ namespace LLC.Infrastructure
             }).GetAwaiter().GetResult();
         }
 
-        private void AddBasicUser()
+        private void AddLawyerUser()
         {
             Task.Run(async () =>
             {
@@ -104,9 +105,42 @@ namespace LLC.Infrastructure
                 var basicUser = new LLCUser
                 {
                     FirstName = "Joe",
-                    LastName = "Sanchez",
-                    Email = "joesanchez@gmail.com",
-                    UserName = "joesanchez",
+                    LastName = "Lawyer",
+                    Email = "lawyer@gmail.com",
+                    UserName = "Lawyer",
+                    EmailConfirmed = true,
+                    PhoneNumberConfirmed = true,
+                    CreatedOn = DateTime.Now,
+                    IsActive = true
+                };
+                var basicUserInDb = await _userManager.FindByEmailAsync(basicUser.Email);
+                if (basicUserInDb == null)
+                {
+                    await _userManager.CreateAsync(basicUser, UserConstants.DefaultPassword);
+                    await _userManager.AddToRoleAsync(basicUser, RoleConstants.BasicRole);
+                    _logger.LogInformation("Seeded User with Basic Role.");
+                }
+            }).GetAwaiter().GetResult();
+        }
+        private void AddClientUser()
+        {
+            Task.Run(async () =>
+            {
+                //Check if Role Exists
+                var basicRole = new IdentityRole(RoleConstants.BasicRole);
+                var basicRoleInDb = await _roleManager.FindByNameAsync(RoleConstants.BasicRole);
+                if (basicRoleInDb == null)
+                {
+                    await _roleManager.CreateAsync(basicRole);
+                    _logger.LogInformation("Seeded Basic Role.");
+                }
+                //Check if User Exists
+                var basicUser = new LLCUser
+                {
+                    FirstName = "Abbey",
+                    LastName = "Client",
+                    Email = "client@gmail.com",
+                    UserName = "Client",
                     EmailConfirmed = true,
                     PhoneNumberConfirmed = true,
                     CreatedOn = DateTime.Now,

@@ -53,8 +53,8 @@
         <MudListSubheader Class="mt-2 mb-n2">@localizer["Client Management"]</MudListSubheader>
         @if (_authorizationService.AuthorizeAsync(AuthenticationStateProviderUser, Permissions.Products.View).Result.Succeeded)
         {
-            <MudNavLink Href="/catalog/products" Icon="@Icons.Material.Outlined.CallToAction">
-                @localizer["Closer Script"]
+            <MudNavLink Href="/catalog/scripts" Icon="@Icons.Material.Outlined.CallToAction">
+                @localizer["Scripts"]
             </MudNavLink>
         }
         @if (_authorizationService.AuthorizeAsync(AuthenticationStateProviderUser, Permissions.Brands.View).Result.Succeeded)

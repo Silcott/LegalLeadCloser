@@ -43,10 +43,13 @@
                 <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Disabled="@(!validated)" Color="Color.Primary" Size="Size.Large" Style="width: 100%;">@localizer["Sign In"]</MudButton>
             </MudItem>
             <MudItem xs="12">
-                <MudButton OnClick="FillAdministratorCredentials">@localizer["Fill Administrator Credentials"]</MudButton>
+                <MudButton OnClick="FillAdministratorCredentials">@localizer["Fill Admin Credentials"]</MudButton>
             </MudItem>
             <MudItem xs="12">
-                <MudButton OnClick="FillBasicUserCredentials">@localizer["Fill Basic User Credentials"]</MudButton>
+                <MudButton OnClick="FillBasicUserCredentials">@localizer["Fill Lawyer Credentials"]</MudButton>
+            </MudItem> 
+            <MudItem xs="12">
+                <MudButton OnClick="FillClientCredentials">@localizer["Fill Client Credentials"]</MudButton>
             </MudItem>
         </MudGrid>
     </EditForm>

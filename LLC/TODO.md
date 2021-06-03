@@ -7,19 +7,29 @@
 - [ ] Program forgot password - need to set up
 - [ ] Chat - have only clients with users show as contacts and enable Admin to contact anyone
 - [ ] Need to be able to delete all user clients if user is deleted
-- [ ] Chart Clients on Admin Dashboard
 - [ ] Add cards to homepage to add clients - pops up client CRUD card
 - [ ] Create Pay Page
 - [ ] Create/Design Close Button
 - [ ] Fix Action button for Clients and User pages - they are cut off when respoonsive view is in mobile
+- [ ] Setup Audit Trails to User Specific and Admin to see all
+- [ ] Create document storage for each client
+- [ ] Resize cards for user and roles pages
 - [ ] 
 - [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+
 
 
 
 
 ## Accomplished
 
+- [x] Chart Clients on Admin Dashboard
 - [x] Added view - see who created client by userId
 - [x] Added Method - User Can Only View Clients They Created
 - [x] Updated MainLayout/Created Client Page

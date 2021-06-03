@@ -63,7 +63,7 @@ namespace LLC.Client.Pages.Identity
 
                 }
                 //TODO setup admin account email that no one else can create - may need to change back to outlook
-                else if (tokenModel.Email == "ascent.legal.us@gmail.com" || tokenModel.Email == "silcott.jb@outlook.com")
+                else if (tokenModel.Email == "ascent.legal.us@gmail.com" || tokenModel.Email == "admin@gmail.com")
                 {
                     _snackBar.Add(localizer["Can't delete Admin or Basic"], Severity.Success);
                 }
