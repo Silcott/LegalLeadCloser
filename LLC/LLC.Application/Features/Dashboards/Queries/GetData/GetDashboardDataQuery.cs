@@ -38,6 +38,7 @@ namespace LLC.Application.Features.Dashboards.Queries.GetData
             {
                 ProductCount = await _unitOfWork.Repository<Product>().Entities.CountAsync(cancellationToken),
                 BrandCount = await _unitOfWork.Repository<Brand>().Entities.CountAsync(cancellationToken),
+                //usercount2 is used to find the number of users by DateCreated for the graph
                 UserCount2 = await _unitOfWork.Repository2<Models.Identity.LLCUser>().Entities.CountAsync(cancellationToken),
                 UserCount = await _userService.GetCountAsync(),
                 RoleCount = await _roleService.GetCountAsync()
@@ -57,7 +58,6 @@ namespace LLC.Application.Features.Dashboards.Queries.GetData
                 //productsFigure[i - 1] = await _unitOfWork.Repository<Product>().Entities.Where(x => x.CreatedOn >= filterStartDate && x.CreatedOn <= filterEndDate).CountAsync(cancellationToken);
                 brandsFigure[i - 1] = await _unitOfWork.Repository<Brand>().Entities.Where(x => x.CreatedOn >= filterStartDate && x.CreatedOn <= filterEndDate).CountAsync(cancellationToken);
                 usersFigure[i - 1] = await _unitOfWork.Repository2<Models.Identity.LLCUser>().Entities.Where(x => x.CreatedOn >= filterStartDate && x.CreatedOn <= filterEndDate).CountAsync(cancellationToken);
-                //usersFigure[i - 1] = await _userService.GetCountAsync();
 
             }
 
