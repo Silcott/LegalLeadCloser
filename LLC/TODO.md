@@ -3,7 +3,6 @@
 ## What's Next
 
 - [ ] Get userID to show user name in Brand/Client page for createdBy
-- [ ] Add at login client creditals
 - [ ] Program forgot password - need to set up
 - [ ] Chat - have only clients with users show as contacts and enable Admin to contact anyone
 - [ ] Need to be able to delete all user clients if user is deleted
@@ -14,8 +13,8 @@
 - [ ] Setup Audit Trails to User Specific and Admin to see all
 - [ ] Create document storage for each client
 - [ ] Resize cards for user and roles pages
-- [ ] 
-- [ ] 
+- [ ] Set up admin to gain acces to any account
+- [ ] Have Admin be able to edit email addresses of lawyers and lawyers change clients
 - [ ] 
 - [ ] 
 - [ ] 
@@ -29,6 +28,7 @@
 
 ## Accomplished
 
+- [x] Add at login client creditals
 - [x] Chart Clients on Admin Dashboard
 - [x] Added view - see who created client by userId
 - [x] Added Method - User Can Only View Clients They Created

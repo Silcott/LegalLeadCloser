@@ -29,3 +29,13 @@ System.IO.IOException: Failed to bind to address https://127.0.0.1:5001: address
 2021-06-02 22:45:51.381 -04:00 [INF] Application started. Press Ctrl+C to shut down.
 2021-06-02 22:45:51.387 -04:00 [INF] Hosting environment: Development
 2021-06-02 22:45:51.393 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server
+2021-06-02 22:50:59.625 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-02 22:50:59.660 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-02 22:50:59.662 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-02 22:50:59.663 -04:00 [INF] Hosting environment: Development
+2021-06-02 22:50:59.664 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server
+2021-06-02 22:56:39.804 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-02 22:56:39.841 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-02 22:56:39.845 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-02 22:56:39.846 -04:00 [INF] Hosting environment: Development
+2021-06-02 22:56:39.847 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server
