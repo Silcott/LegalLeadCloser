@@ -388,6 +388,13 @@ C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server\obj\Debug\net5.0\LLC
 C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server\obj\Debug\net5.0\ref\LLC.Server.dll
 C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server\obj\Debug\net5.0\LLC.Server.pdb
 C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\LLC\Server\obj\Debug\net5.0\LLC.Server.genruntimeconfig.cache
+C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\obj\Debug\net5.0\LLC.Server.csprojAssemblyReference.cache
+C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\obj\Debug\net5.0\LLC.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\obj\Debug\net5.0\LLC.Server.AssemblyInfoInputs.cache
+C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\obj\Debug\net5.0\LLC.Server.AssemblyInfo.cs
+C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\obj\Debug\net5.0\LLC.Server.csproj.CoreCompileInputs.cache
+C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\obj\Debug\net5.0\LLC.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\bin\Debug\net5.0\LLC.Client.StaticWebAssets.xml
 C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\bin\Debug\net5.0\appsettings.json
 C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\bin\Debug\net5.0\BlazorDebugProxy\BrowserDebugHost.dll
@@ -399,7 +406,6 @@ C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\bin\Debug\net5.0\BlazorD
 C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\bin\Debug\net5.0\BlazorDebugProxy\Mono.Cecil.Pdb.dll
 C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\bin\Debug\net5.0\BlazorDebugProxy\Mono.Cecil.Rocks.dll
 C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\bin\Debug\net5.0\BlazorDebugProxy\Newtonsoft.Json.dll
-C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\bin\Debug\net5.0\LLC.Client.StaticWebAssets.xml
 C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\bin\Debug\net5.0\LLC.Server.StaticWebAssets.xml
 C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\bin\Debug\net5.0\LLC.Server.exe
 C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\bin\Debug\net5.0\LLC.Server.deps.json
@@ -567,13 +573,6 @@ C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\bin\Debug\net5.0\ru\LLC.
 C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\bin\Debug\net5.0\sv\LLC.Client.resources.dll
 C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\bin\Debug\net5.0\en\LLC.Client.Infrastructure.resources.dll
 C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\bin\Debug\net5.0\ru\LLC.Client.Infrastructure.resources.dll
-C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\obj\Debug\net5.0\LLC.Server.csprojAssemblyReference.cache
-C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\obj\Debug\net5.0\LLC.Server.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\obj\Debug\net5.0\LLC.Server.AssemblyInfoInputs.cache
-C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\obj\Debug\net5.0\LLC.Server.AssemblyInfo.cs
-C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\obj\Debug\net5.0\LLC.Server.csproj.CoreCompileInputs.cache
-C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\obj\Debug\net5.0\LLC.Server.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\obj\Debug\net5.0\LLC.Server.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\obj\Debug\net5.0\staticwebassets\LLC.Server.StaticWebAssets.Manifest.cache
 C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\obj\Debug\net5.0\staticwebassets\LLC.Server.StaticWebAssets.xml
 C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\obj\Debug\net5.0\scopedcss\bundle\LLC.Server.styles.css

@@ -34,7 +34,6 @@
     <RowTemplate>
         @if (_authorizationService.AuthorizeAsync(AuthenticationStateProviderUser, Permissions.Roles.View).Result.Succeeded || _authorizationService.AuthorizeAsync(AuthenticationStateProviderUser, Permissions.Users.View).Result.Succeeded)
         {
-
             <MudTd DataLabel="Id">@context.Id</MudTd>
             <MudTd DataLabel="First Name">
                 <MudHighlighter Text="@context.FirstName" HighlightedText="@searchString" />
@@ -60,18 +59,17 @@
         }
         else if (context.CreatedBy == CurrentUserId)
         {
-            <MudTd DataLabel="Id">@context.Id</MudTd>
             <MudTd DataLabel="First Name">
                 <MudHighlighter Text="@context.FirstName" HighlightedText="@searchString" />
             </MudTd>
             <MudTd DataLabel="Last Name">
                 <MudHighlighter Text="@context.LastName" HighlightedText="@searchString" />
             </MudTd>
-            <MudTd DataLabel="Court Date">@context.CourtDate</MudTd>
+            <MudTd DataLabel="Court Date">@context.CourtDate.ToString().Remove(9)</MudTd>@*Remove 9 - removes the time 12:00AM*@
             <MudTd DataLabel="Court Location">@context.CourtLocation</MudTd>
             <MudTd DataLabel="Phone">@context.Phone</MudTd>
             <MudTd DataLabel="Email">@context.Email</MudTd>
-            <MudTd DataLabel="Birthdate">@context.Birthdate</MudTd>
+            <MudTd DataLabel="Birthdate">@context.Birthdate.ToString().Remove(9)</MudTd>
 
 
             <MudTd DataLabel="Actions" Style="text-align:right">
@@ -94,6 +92,7 @@
 </MudTable>
 
 
+
 @code {
     private ClaimsPrincipal AuthenticationStateProviderUser { get; set; }
 
@@ -102,3 +101,4 @@
         AuthenticationStateProviderUser = await _stateProvider.GetAuthenticationStateProviderUserAsync();
     }
 }
+

@@ -301,7 +301,7 @@ using System.Security.Claims;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 97 "C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Client\Pages\Catalog\Brands.razor"
+#line 96 "C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Client\Pages\Catalog\Brands.razor"
        
     private ClaimsPrincipal AuthenticationStateProviderUser { get; set; }
 

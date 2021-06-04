@@ -35,13 +35,14 @@
                     <MudTextField For="@(() => AddEditBrandModel.LastName)" @bind-Value="AddEditBrandModel.LastName" Label="@localizer["Last Name"]" />
                 </MudItem>
                 <MudItem xs="12" md="6">
-                    <MudTextField For="@(() => AddEditBrandModel.CourtDate)" @bind-Value="AddEditBrandModel.CourtDate" Label="@localizer["Court Date"]" />
+                    <MudDatePicker Elevation="8" DateFormat="dd-MM-yyyy" @bind-Date="AddEditBrandModel.CourtDate" Label="@localizer["Court Date"]" />
+                    <p hidden><MudTextField For="@(() => AddEditBrandModel.CourtDate)" @bind-Value="AddEditBrandModel.CourtDate" Label="@localizer["Court Date"]" /></p>
                 </MudItem>
                 <MudItem xs="12" md="6">
                     <MudTextField For="@(() => AddEditBrandModel.CourtLocation)" @bind-Value="AddEditBrandModel.CourtLocation" Label="@localizer["Court Location"]" />
                 </MudItem>
                 <MudItem xs="12" md="6">
-                    <MudTextField For="@(() => AddEditBrandModel.Phone)" @bind-Value="AddEditBrandModel.Phone" Label="@localizer["Phone"]" />
+                        <MudTextField For="@(() => AddEditBrandModel.Phone)" @bind-Value="AddEditBrandModel.Phone" Label="@localizer["Phone"]" Placeholder="(XXX)XXX-XXXX" />
                 </MudItem>
                 <MudItem xs="12" md="6">
                     <MudTextField For="@(() => AddEditBrandModel.Email)" @bind-Value="AddEditBrandModel.Email" Label="@localizer["Email"]" />
@@ -64,3 +65,8 @@
         </DialogActions>
     </MudDialog>
 </EditForm>
+
+@code{
+    MudDatePicker _picker;
+    DateTime date = Convert.ToDateTime(DateTime.Today.ToShortDateString());
+}

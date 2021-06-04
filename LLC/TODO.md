@@ -15,7 +15,7 @@
 - [ ] Resize cards for user and roles pages
 - [ ] Set up admin to gain acces to any account
 - [ ] Have Admin be able to edit email addresses of lawyers and lawyers change clients
-- [ ] 
+- [ ] Fix client edit date - it removes the client from the users list - propbably datatype error
 - [ ] 
 - [ ] 
 - [ ] 

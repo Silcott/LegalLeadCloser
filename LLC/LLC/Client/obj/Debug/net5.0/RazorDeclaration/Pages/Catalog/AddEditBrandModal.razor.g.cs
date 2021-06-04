@@ -292,6 +292,15 @@ using LLC.Application.Features.Brands.Commands.AddEdit;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 69 "C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Client\Pages\Catalog\AddEditBrandModal.razor"
+      
+    MudDatePicker _picker;
+    DateTime date = Convert.ToDateTime(DateTime.Today.ToShortDateString());
+
+#line default
+#line hidden
+#nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IDocumentManager _documentManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime _jsRuntime { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ILocalStorageService _localStorage { get; set; }

@@ -17,28 +17,27 @@ namespace LLC.Application.Features.Brands.Commands.AddEdit
         //TODO set realtionship with user and client ID
         public int Id { get; set; }
 
-        public int UserId { get; set; }
+        public string CreatedBy { get; set; }
         [Required]
         public string FirstName { get; set; }
         [Required]
         public string LastName { get; set; }
 
-        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
-        [DataType(DataType.Date, ErrorMessage = "date is not a corret format")]
-        [Required]
-        public DateTime CourtDate { get; set; }
+        [DisplayFormat(DataFormatString = "{dd/MM/yyyy}")]
+        [DataType(DataType.Date)]
+        public DateTime? CourtDate { get; set; }
 
         public string CourtLocation { get; set; }
+        [Display(Name = "Phone")]
+        [DataType(DataType.PhoneNumber)]
+        [RegularExpression(@"^\\(?(\[0-9\]{3})\\)?\[-.●\]?(\[0-9\]{3})\[-.●\]?(\[0-9\]{4})$", ErrorMessage = "The PhoneNumber field is not a valid phone number")]
         [Phone]
         public string Phone { get; set; }
         [EmailAddress]
         public string Email { get; set; }
-        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
-        [DataType(DataType.Date, ErrorMessage = "date is not a corret format")]
+        [DisplayFormat(DataFormatString = "{dd/MM/yyyy}")]
+        [DataType(DataType.Date)]
         public DateTime Birthdate { get; set; }
-
-
-
     }
 
     public class AddEditBrandCommandHandler : IRequestHandler<AddEditBrandCommand, Result<int>>
@@ -76,7 +75,7 @@ namespace LLC.Application.Features.Brands.Commands.AddEdit
                     brand.Phone = command.Phone ?? brand.Phone;
                     brand.Email = command.Email ?? brand.Email;
                     brand.Birthdate = brand.Birthdate;
-                    brand.CreatedBy = command.Id.ToString();
+                    brand.CreatedBy = command.CreatedBy;
 
 
                     //brand.LastName = (command.Tax == 0) ? brand.Tax : command.Tax;

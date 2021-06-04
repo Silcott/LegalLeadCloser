@@ -84,8 +84,6 @@ namespace LLC.Client.Pages.Catalog
                 }
             }
         }
-        //private readonly Microsoft.AspNetCore.Identity.UserManager<Application.Models.Identity.LLCUser> _user;
-        private readonly Application.Interfaces.Services.ICurrentUserService _currentUser;
 
         private async Task InvokeModal(int id = 0)
         {
@@ -98,7 +96,7 @@ namespace LLC.Client.Pages.Catalog
                     parameters.Add(nameof(AddEditBrandModal.AddEditBrandModel), new AddEditBrandCommand
                     {
                         Id = brand.Id,
-                        UserId = Int32.Parse(_currentUser.UserId),
+                        CreatedBy = brand.CreatedBy,
                         FirstName = brand.FirstName,
                         LastName = brand.LastName,
                         CourtDate = brand.CourtDate,

@@ -11,3 +11,5 @@ window.Download = (options) => {
             document.body.removeChild(link);
         });
 }
+
+
