@@ -293,10 +293,28 @@ using LLC.Application.Features.Brands.Commands.AddEdit;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 69 "C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Client\Pages\Catalog\AddEditBrandModal.razor"
-      
+#line 72 "C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Client\Pages\Catalog\AddEditBrandModal.razor"
+ 
+    [Inject] public IJSRuntime _1JSRuntime { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender)
+        {
+            return;
+        }
+        await _1JSRuntime.InvokeAsync<object>("JsInteropFunction", null);
+
+    }
+    private async Task PhoneInput()
+    {
+        await _1JSRuntime.InvokeVoidAsync("JsInteropFunction", new object[] { "phone" }, true);
+        StateHasChanged();
+    }
+
     MudDatePicker _picker;
     DateTime date = Convert.ToDateTime(DateTime.Today.ToShortDateString());
+
 
 #line default
 #line hidden
@@ -321,6 +339,7 @@ using LLC.Application.Features.Brands.Commands.AddEdit;
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager _navigationManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IAccountManager _accountManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IAuthenticationManager _authenticationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JSRuntime { get; set; }
     }
 }
 #pragma warning restore 1591

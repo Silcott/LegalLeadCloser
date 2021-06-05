@@ -1,4 +1,5 @@
 ﻿@using LLC.Application.Features.Brands.Commands.AddEdit
+
 <EditForm Model="@AddEditBrandModel" OnValidSubmit="SaveAsync">
     <FluentValidationValidator @ref="_fluentValidationValidator" />
     <MudDialog>
@@ -42,8 +43,9 @@
                     <MudTextField For="@(() => AddEditBrandModel.CourtLocation)" @bind-Value="AddEditBrandModel.CourtLocation" Label="@localizer["Court Location"]" />
                 </MudItem>
                 <MudItem xs="12" md="6">
-                        <MudTextField For="@(() => AddEditBrandModel.Phone)" @bind-Value="AddEditBrandModel.Phone" Label="@localizer["Phone"]" Placeholder="(XXX)XXX-XXXX" />
-                </MudItem>
+                    <div id="phone">
+                        <MudTextField For="@(() => AddEditBrandModel.Phone)" @bind-Value="AddEditBrandModel.Phone" Label="@localizer["Phone"]" Placeholder="(XXX)XXX-XXXX" @onfocus="PhoneInput" @onchange="PhoneInput" @oninput="PhoneInput" />
+                    </div></MudItem>
                 <MudItem xs="12" md="6">
                     <MudTextField For="@(() => AddEditBrandModel.Email)" @bind-Value="AddEditBrandModel.Email" Label="@localizer["Email"]" />
                 </MudItem>
@@ -66,7 +68,26 @@
     </MudDialog>
 </EditForm>
 
-@code{
+@code
+{
+    [Inject] public IJSRuntime _1JSRuntime { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender)
+        {
+            return;
+        }
+        await _1JSRuntime.InvokeAsync<object>("JsInteropFunction", null);
+
+    }
+    private async Task PhoneInput()
+    {
+        await _1JSRuntime.InvokeVoidAsync("JsInteropFunction", new object[] { "phone" }, true);
+        StateHasChanged();
+    }
+
     MudDatePicker _picker;
     DateTime date = Convert.ToDateTime(DateTime.Today.ToShortDateString());
+
 }

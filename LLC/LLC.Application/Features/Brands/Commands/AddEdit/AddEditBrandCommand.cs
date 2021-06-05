@@ -28,10 +28,10 @@ namespace LLC.Application.Features.Brands.Commands.AddEdit
         public DateTime? CourtDate { get; set; }
 
         public string CourtLocation { get; set; }
-        [Display(Name = "Phone")]
-        [DataType(DataType.PhoneNumber)]
-        [RegularExpression(@"^\\(?(\[0-9\]{3})\\)?\[-.●\]?(\[0-9\]{3})\[-.●\]?(\[0-9\]{4})$", ErrorMessage = "The PhoneNumber field is not a valid phone number")]
-        [Phone]
+        //[Display(Name = "Phone")]
+        //[DataType(DataType.PhoneNumber)]
+        //[RegularExpression(@"^\\(?(\[0-9\]{3})\\)?\[-.●\]?(\[0-9\]{3})\[-.●\]?(\[0-9\]{4})$", ErrorMessage = "The PhoneNumber field is not a valid phone number")]
+        //[Phone]
         public string Phone { get; set; }
         [EmailAddress]
         public string Email { get; set; }

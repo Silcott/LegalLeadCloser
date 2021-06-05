@@ -582,3 +582,4 @@ C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\obj\Debug\net5.0\LLC.Ser
 C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\obj\Debug\net5.0\ref\LLC.Server.dll
 C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\obj\Debug\net5.0\LLC.Server.pdb
 C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\obj\Debug\net5.0\LLC.Server.genruntimeconfig.cache
+C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\obj\Debug\net5.0\LLC.Server.MvcApplicationPartsAssemblyInfo.cs

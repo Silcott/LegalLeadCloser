@@ -46,6 +46,7 @@
 @using LLC.Client.Extensions
 
 @attribute [Authorize]
+@inject IJSRuntime JSRuntime;
 @inject IAuthenticationManager _authenticationManager
 @inject IAccountManager _accountManager
 @inject NavigationManager _navigationManager
