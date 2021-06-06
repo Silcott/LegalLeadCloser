@@ -15,7 +15,6 @@
 - [ ] Resize cards for user and roles pages
 - [ ] Set up admin to gain acces to any account
 - [ ] Have Admin be able to edit email addresses of lawyers and lawyers change clients
-- [ ] Fix client edit date - it removes the client from the users list - propbably datatype error
 - [ ] 
 - [ ] 
 - [ ] 
@@ -29,7 +28,7 @@
 ## Accomplished
 
 - [x]  
-- [x]  
+- [x] Fix client edit date - it removes the client from the users list - propbably datatype error - was not loading by CreatedBy prop
 - [x] Created PWA - Progressive Web App, Can use app offline now
 - [x] Implemented Javascript - Added Inputmask for phone numbers 
 - [x] Added Datepicker and data validations for CLient Page
