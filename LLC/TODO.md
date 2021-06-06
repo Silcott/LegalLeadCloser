@@ -28,6 +28,11 @@
 
 ## Accomplished
 
+- [x]  
+- [x]  
+- [x] Created PWA - Progressive Web App, Can use app offline now
+- [x] Implemented Javascript - Added Inputmask for phone numbers 
+- [x] Added Datepicker and data validations for CLient Page
 - [x] Add at login client creditals
 - [x] Chart Clients on Admin Dashboard
 - [x] Added view - see who created client by userId
@@ -36,5 +41,5 @@
 - [x] Failsafe created, can't delete Admin
 - [x] Created User Delete for Admin
 - [x] Designed logo/icon - drawed in SVG path and PNG formats
-- [x] Created new application using Blazor
+- [x] Created new application using Blazor - BlazorHero Architecture Template
 
