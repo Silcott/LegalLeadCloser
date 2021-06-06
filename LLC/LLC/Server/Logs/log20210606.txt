@@ -73,3 +73,13 @@ System.InvalidOperationException: Headers are read-only, response has already st
 2021-06-06 07:28:55.791 -04:00 [INF] Application started. Press Ctrl+C to shut down.
 2021-06-06 07:28:55.792 -04:00 [INF] Hosting environment: Development
 2021-06-06 07:28:55.792 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server
+2021-06-06 17:49:49.686 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-06 17:49:49.724 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-06 17:49:49.727 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-06 17:49:49.727 -04:00 [INF] Hosting environment: Development
+2021-06-06 17:49:49.728 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server
+2021-06-06 18:00:56.873 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-06 18:00:56.909 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-06 18:00:56.911 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-06 18:00:56.912 -04:00 [INF] Hosting environment: Development
+2021-06-06 18:00:56.912 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server

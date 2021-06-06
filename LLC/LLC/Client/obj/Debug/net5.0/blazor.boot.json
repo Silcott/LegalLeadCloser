@@ -275,42 +275,42 @@
     },
     "satelliteResources": {
       "de": {
-        "de\/LLC.Client.resources.dll": "sha256-s\/iRV0Khq1q3xPJ4lTVzSQvzay3hbmeiAxkGWzfkyjM=",
-        "de\/LLC.Application.resources.dll": "sha256-fOq1bD11ZxLkIipQ7WZXHwbEykfUq0w\/K5rik+fm2b0="
+        "de\/LLC.Client.resources.dll": "sha256-PzYcfyY81sbUlu5Qqd1S8hSLdYUJG\/hXhTW310566B4=",
+        "de\/LLC.Application.resources.dll": "sha256-9CoygLckG71cAzrNKWzCMPk3Lmj75tciPCcml34k2IE="
       },
       "en": {
-        "en\/LLC.Client.resources.dll": "sha256-jCjBRzNS2I0lGGNphp5XxTLDzafhKUammhq5uHSmCDQ=",
-        "en\/LLC.Client.Infrastructure.resources.dll": "sha256-PNXJG4FMC\/l3qnAbLEoHdWj3xJD6UgSgANv\/BQwY72o=",
-        "en\/LLC.Application.resources.dll": "sha256-E\/Q\/KeV1PD3PEvbTUJKUu\/udJ2o7X9WesLlHNClFhdQ="
+        "en\/LLC.Client.resources.dll": "sha256-S3R5SnrGvN0HMwM04rfBLbXQxs3adyvTqJv6WjSo8ao=",
+        "en\/LLC.Client.Infrastructure.resources.dll": "sha256-k3OdxA8qe0v\/a2VQAOelAtqlAhgUhFq+R72zvJgzYX0=",
+        "en\/LLC.Application.resources.dll": "sha256-tdvkmtddG2hIiEPGXhKPiM\/yU6vi2HgkD9F7qvW33oo="
       },
       "es": {
-        "es\/LLC.Client.resources.dll": "sha256-1btDXqJbNGnFCQ3veqRsMZRM0ZxQkR8hIFENAmgCR7g=",
-        "es\/LLC.Application.resources.dll": "sha256-zKP9utgGy6UXb0S\/yakMaFvqAx89NyDHX8O2ksIiCJk="
+        "es\/LLC.Client.resources.dll": "sha256-0ka0KVbWvlqCDuPPfHRdVD1uW5PajrLWCneMa3J\/VXM=",
+        "es\/LLC.Application.resources.dll": "sha256-yYywSJyhVW+sIkJ+ax50cGOS6p2bH1RIupBetSy\/d+Q="
       },
       "id": {
-        "id\/LLC.Client.resources.dll": "sha256-YEVONixDl6PAic+mvdTQWl\/mG4inwnjbTweIH8SiuzI=",
-        "id\/LLC.Application.resources.dll": "sha256-4mL\/ID4iugpqaoLLrAIDnWqjSW10Ymieh661coDT29c="
+        "id\/LLC.Client.resources.dll": "sha256-liiG1UZg4U7n4Riht+F0YxlwvE91H8SY2xseV+RmyOM=",
+        "id\/LLC.Application.resources.dll": "sha256-EAWVFDF1BhXWgrK7N9Z9nb03uDwm6T87bNdFUQ4RRtU="
       },
       "it": {
-        "it\/LLC.Client.resources.dll": "sha256-FQBsrejLbQudH5\/FWLuCuMSm1eh\/qNDrViMuC0Nx7eM=",
-        "it\/LLC.Application.resources.dll": "sha256-d8r7pxPK9tZOk1PIjHTGwfgj8nV7aRva5IIgYvFoi9c="
+        "it\/LLC.Client.resources.dll": "sha256-Od82WsSeS1wHQD4qFucubRdKCJPyNSu15FdeV1\/wsBU=",
+        "it\/LLC.Application.resources.dll": "sha256-dKkz\/XedBT8Wn0VKKI8E8uwkazCuKs4LDm8l9fBw4Uc="
       },
       "km": {
-        "km\/LLC.Client.resources.dll": "sha256-F\/4Ca4jyCM8pccpIr\/qW7Hxr2Ilo0QLBUEx6ptOB8OE=",
-        "km\/LLC.Application.resources.dll": "sha256-Nb1oxPp9eOKG8Pk+NLHeZ0btjKP6SBDBuFm5Rz6TBVc="
+        "km\/LLC.Client.resources.dll": "sha256-jIDXu0a82r4DncoXFxfHRmQjTU873ZuxfqmqN3cQbVg=",
+        "km\/LLC.Application.resources.dll": "sha256-p\/NWsGyNpV8nTWQTj59ziZ\/4scXom3fwskLQql5Gz8w="
       },
       "ru": {
-        "ru\/LLC.Client.resources.dll": "sha256-S7GMo9phNChxzz5pdzfOjF032v5yN5V\/IETsCpU1oCE=",
-        "ru\/LLC.Client.Infrastructure.resources.dll": "sha256-f5IGMKCsZOjOzGlIGJ1buzKwakhsl5QvCEKUdQBKsE0=",
-        "ru\/LLC.Application.resources.dll": "sha256-tKNODoNZSduM9mK7U52rY5RIn0myaIKtckQQQ6uKIfU="
+        "ru\/LLC.Client.resources.dll": "sha256-ptlN4vO0+CYMfLarMOTXZzuJJWVUD7ioHkKPSQnP3IE=",
+        "ru\/LLC.Client.Infrastructure.resources.dll": "sha256-ZmNEZUwR7DQamZIpiEjfU7ErTYnduBfYEHbw0ieAaYc=",
+        "ru\/LLC.Application.resources.dll": "sha256-WmoRYhR2iH6m1\/qL+exwzHtrIgNX9NI759rVl62a300="
       },
       "sv": {
-        "sv\/LLC.Client.resources.dll": "sha256-C7KeXMFr8GxqKU\/6Jg4L1TqZ7dCrnVFBpezAo7JwtGg=",
-        "sv\/LLC.Application.resources.dll": "sha256-QbJkljsLbNd6dxbzqUT53YoIDoGPdVOgtV7OXf2A7Ew="
+        "sv\/LLC.Client.resources.dll": "sha256-Opu8qxdL2woaAOtlxw8I5JM7mIgzvFYFU\/+pjUVF61k=",
+        "sv\/LLC.Application.resources.dll": "sha256-gG0SLc7EimkANkNCydSZUanCSnfh8liTPAn+ldqSRtk="
       },
       "fr": {
-        "fr\/LLC.Client.resources.dll": "sha256-vGO8VbKF+L\/hwzvr2W3AfIrmfHH+OUpLX\/cxuPRIcK4=",
-        "fr\/LLC.Application.resources.dll": "sha256-Anuwn3ezCCGsiyQ0CbOuQoguKX5Tbebrb0EOLvGyO8E="
+        "fr\/LLC.Client.resources.dll": "sha256-ClwcmEv9rvym87e8kcW12bIH2rgSYfmECVwOpMX18Ek=",
+        "fr\/LLC.Application.resources.dll": "sha256-MjnEojwXCrJwcODehe8y05W+MIONxE0XBYwrgNH9t2M="
       }
     }
   }

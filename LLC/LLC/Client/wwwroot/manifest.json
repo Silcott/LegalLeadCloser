@@ -1,0 +1,38 @@
+{
+  "short_name": "LLC",
+  "name": "Legal Lead Closer",
+  "icons": [
+    {
+      "src": "/images/LLC.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#3367D6",
+  "display": "fullscreen",
+  "scope": "/",
+  "theme_color": "#3367D6",
+  "shortcuts": [
+    {
+      "name": "Legal Lead Closer",
+      "short_name": "LLC",
+      "description": "Attorney & Client App",
+      "url": "/?source=pwa",
+      "icons": [
+        {
+          "src": "/images/LLC.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "description": "Legal App for Attorneys",
+  "screenshots": [
+    {
+      "src": "/images/LLC_Logo_colored.png",
+      "type": "image/png",
+      "sizes": "540x720"
+    }
+  ]
+}
