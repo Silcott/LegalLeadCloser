@@ -297,15 +297,15 @@ using LLC.Application.Features.Brands.Commands.AddEdit;
  
     [Inject] public IJSRuntime _1JSRuntime { get; set; }
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (!firstRender)
-        {
-            return;
-        }
-        await _1JSRuntime.InvokeAsync<object>("JsInteropFunction", null);
+    //protected override async Task OnAfterRenderAsync(bool firstRender)
+    //{
+    //    if (!firstRender)
+    //    {
+    //        return;
+    //    }
+    //    await _1JSRuntime.InvokeAsync<object>("JsInteropFunction", null);
 
-    }
+    //}
     private async Task PhoneInput()
     {
         await _1JSRuntime.InvokeVoidAsync("JsInteropFunction", new object[] { "phone" }, true);

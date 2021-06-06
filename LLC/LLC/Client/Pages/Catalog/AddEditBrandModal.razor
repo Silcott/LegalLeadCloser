@@ -44,7 +44,7 @@
                 </MudItem>
                 <MudItem xs="12" md="6">
                     <div id="phone">
-                        <MudTextField For="@(() => AddEditBrandModel.Phone)" @bind-Value="AddEditBrandModel.Phone" Label="@localizer["Phone"]" Placeholder="(XXX)XXX-XXXX" @onfocus="PhoneInput" @onchange="PhoneInput" @oninput="PhoneInput" />
+                        <MudTextField For="@(() => AddEditBrandModel.Phone)" @bind-Value="AddEditBrandModel.Phone" Label="@localizer["Phone"]" Placeholder="(XXX)XXX-XXXX" @onfocus="PhoneInput"   />
                     </div></MudItem>
                 <MudItem xs="12" md="6">
                     <MudTextField For="@(() => AddEditBrandModel.Email)" @bind-Value="AddEditBrandModel.Email" Label="@localizer["Email"]" />
@@ -72,15 +72,15 @@
 {
     [Inject] public IJSRuntime _1JSRuntime { get; set; }
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (!firstRender)
-        {
-            return;
-        }
-        await _1JSRuntime.InvokeAsync<object>("JsInteropFunction", null);
+    //protected override async Task OnAfterRenderAsync(bool firstRender)
+    //{
+    //    if (!firstRender)
+    //    {
+    //        return;
+    //    }
+    //    await _1JSRuntime.InvokeAsync<object>("JsInteropFunction", null);
 
-    }
+    //}
     private async Task PhoneInput()
     {
         await _1JSRuntime.InvokeVoidAsync("JsInteropFunction", new object[] { "phone" }, true);
