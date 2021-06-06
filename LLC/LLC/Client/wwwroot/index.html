@@ -11,8 +11,8 @@
     <link href="_content/MudBlazor/MudBlazor.min.css?v=5.0.5" rel="stylesheet" />
     <link href="css/loader.css" rel="stylesheet" />
     <link href="/css/colors.css" rel="stylesheet" />
-    <link href="/manifest.json" rel="manifest" />
-
+    <link rel="manifest" href="manifest.json?v3">
+    <script lang="javascript" src="service-worker.js"></script>
 </head>
 
 <body>
@@ -72,7 +72,7 @@
     <script src="js/file.js"></script>
     <script src="_framework/blazor.webassembly.js"></script>
     <script src="/js/index.js"></script>
-    <script>navigator.serviceWorker.register('/js/service-worker.js');</script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
     <script src="_content/MudBlazor/MudBlazor.min.js?v=5.0.5"></script>
 </body>
 </html>

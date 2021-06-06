@@ -8,7 +8,7 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "/?source=pwa",
+  "start_url": "./?v3&utm_source=web_app_manifest",
   "background_color": "#3367D6",
   "display": "fullscreen",
   "scope": "/",
@@ -27,6 +27,7 @@
       ]
     }
   ],
+  "offline_enabled": true,
   "description": "Legal App for Attorneys",
   "screenshots": [
     {
