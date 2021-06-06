@@ -49,7 +49,7 @@ Designed using Blazor Webassembly 5.0 built with MudBlazor Components.
 So far this is what is complete:  splash screen for refreshes, user login/registration, account profile updates, basic home page, navbars, user roles to allow Admin access and privilege's to clients, and some more things like Swagger and  Hangfire to ensure error handlings,  authorization and authentication procedures are successful.
 
 <a href="https://www.youtube.com/watch?v=Iu4dlZjw90s">Watch it here!</a>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Iu4dlZjw90s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ### Tech Stack :muscle:
 
 - Blazor WebAssembly 5.0 - ASP.NET Core Hosted Model
