@@ -1,0 +1,56 @@
+2021-06-09 07:30:38.635 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-09 07:30:38.684 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-09 07:30:38.687 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-09 07:30:38.688 -04:00 [INF] Hosting environment: Development
+2021-06-09 07:30:38.689 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server
+2021-06-09 07:30:47.185 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at LLC.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-09 07:30:47.185 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at LLC.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-09 07:30:47.213 -04:00 [ERR] Connection id "0HM9B780SD27J", Request id "0HM9B780SD27J:0000003B": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at LLC.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2021-06-09 07:30:47.213 -04:00 [ERR] Connection id "0HM9B780SD27J", Request id "0HM9B780SD27J:0000003D": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at LLC.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2021-06-09 07:31:31.778 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-09 07:31:31.822 -04:00 [INF] Hosting environment: Development
+2021-06-09 07:31:31.825 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server
+2021-06-09 07:34:34.228 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-09 07:34:34.271 -04:00 [INF] Hosting environment: Development
+2021-06-09 07:34:34.273 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server
+2021-06-09 07:38:29.832 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-09 07:38:29.871 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-09 07:38:29.874 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-09 07:38:29.875 -04:00 [INF] Hosting environment: Development
+2021-06-09 07:38:29.881 -04:00 [INF] Content root path: C:\Users\silco\Documents\LegalLeadCloser\LLC\LLC\Server

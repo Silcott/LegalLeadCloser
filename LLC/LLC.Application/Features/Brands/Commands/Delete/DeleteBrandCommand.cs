@@ -35,7 +35,7 @@ namespace LLC.Application.Features.Brands.Commands.Delete
                 var brand = await _unitOfWork.Repository<Brand>().GetByIdAsync(command.Id);
                 await _unitOfWork.Repository<Brand>().DeleteAsync(brand);
                 await _unitOfWork.ComitAndRemoveCache(cancellationToken, ApplicationConstants.Cache.GetAllBrandsCacheKey);
-                return await Result<int>.SuccessAsync(brand.Id, _localizer["Brand Deleted"]);
+                return await Result<int>.SuccessAsync(brand.Id, _localizer["Client Deleted"]);
             }
             else
             {
